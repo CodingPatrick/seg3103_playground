@@ -69,7 +69,7 @@ Thanks for using JUnit! Support its development at https://junit.org/sponsoring
 │     └─ div_by_zero() ✔
 └─ JUnit Vintage ✔
 
-Test run finished after 60 ms
+Test run finished after 69 ms
 [         3 containers found      ]
 [         0 containers skipped    ]
 [         3 containers started    ]
