@@ -28,7 +28,7 @@ To run the application, we entered the following command line
 java -jar  user-registration-app-0.1.0.jar
 ```
 Then we visit the Local Host website.
-![terminal screenshot](assets/LocalHost.PNG)
+![local host screenshot](assets/LocalHost.PNG)
 
 | Test Case # | Test Case | Expected Result | Actual Result | Verdict (Pass, Fail, Inconclusive) |
 | --- | --- | --- | --- | --- |
@@ -46,18 +46,29 @@ You can find screenshots under assets. Either Input_TCX.PNG or Output_TCX.PNG, w
 
 | Test Case # | Input | Output |
 | --- | --- | --- |
-| 1 | ![terminal screenshot](assets/Input_TC1.PNG) | ![terminal screenshot](assets/Output_TC1.PNG) |
-| 2 | ![terminal screenshot](assets/Input_TC2.PNG) | ![terminal screenshot](assets/Output_TC2.PNG) |
-| 3 | ![terminal screenshot](assets/Input_TC3.PNG) | ![terminal screenshot](assets/Output_TC3.PNG) |
-| 4 | ![terminal screenshot](assets/Input_TC4.PNG) | ![terminal screenshot](assets/Output_TC4.PNG) |
-| 5 | ![terminal screenshot](assets/Input_TC5.PNG) | ![terminal screenshot](assets/Output_TC5.PNG) |
-| 6 | ![terminal screenshot](assets/Input_TC6.PNG) | ![terminal screenshot](assets/Output_TC6.PNG) |
-| 7 | ![terminal screenshot](assets/Input_TC7.PNG) | ![terminal screenshot](assets/Output_TC7.PNG) |
-| 8 | ![terminal screenshot](assets/Input_TC8.PNG) | ![terminal screenshot](assets/Output_TC8.PNG) |
+| 1 | ![test case 1 input screenshot](assets/Input_TC1.PNG) | ![test case 1 output screenshot](assets/Output_TC1.PNG) |
+| 2 | ![test case 2 input screenshot](assets/Input_TC2.PNG) | ![test case 2 output screenshot](assets/Output_TC2.PNG) |
+| 3 | ![test case 3 input screenshot](assets/Input_TC3.PNG) | ![test case 3 output screenshot](assets/Output_TC3.PNG) |
+| 4 | ![test case 4 input screenshot](assets/Input_TC4.PNG) | ![test case 4 output screenshot](assets/Output_TC4.PNG) |
+| 5 | ![test case 5 input screenshot](assets/Input_TC5.PNG) | ![test case 5 output screenshot](assets/Output_TC5.PNG) |
+| 6 | ![test case 6 input screenshot](assets/Input_TC6.PNG) | ![test case 6 output screenshot](assets/Output_TC6.PNG) |
+| 7 | ![test case 7 input screenshot](assets/Input_TC7.PNG) | ![test case 7 output screenshot](assets/Output_TC7.PNG) |
+| 8 | ![test case 8 input screenshot](assets/Input_TC8.PNG) | ![test case 8 output screenshot](assets/Output_TC8.PNG) |
+
+### Screenshot of Tests before Exercise 2
+Here is a screenshot of the terminal after running the tests with the following command lines:
+```bash
+javac -encoding UTF-8 --source-path test -d dist -cp dist:lib/junit-platform-console-standalone-1.7.1.jar test/*.java
+```
+```bash
+java -jar lib/junit-platform-console-standalone-1.7.1.jar --class-path dist --scan-class-path
+```
+![terminal screenshot](assets/E1_Terminal.PNG)
 
 ## Exercise 2
 
 In Exercise 2, we were tasked with implementing some explicit test cases and some parameterized test cases based on the following screenshot:<br>
-![terminal screenshot](assets/E2_TestCases.PNG)
+
+![test case suite screenshot](assets/E2_TestCases.PNG)
 
 These tests can be found under ecs/test. The file with the explicit tests is DateTest.java. The file with the parameterized tests that run OK is DateNextDateOKTest.java. The file with the parameterized test that result in an exception is DateNextDateExceptionTest.java.
