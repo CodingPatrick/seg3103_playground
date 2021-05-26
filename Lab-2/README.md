@@ -67,8 +67,20 @@ java -jar lib/junit-platform-console-standalone-1.7.1.jar --class-path dist --sc
 
 ## Exercise 2
 
+### Test case suite in the lab PowerPoint
+
 In Exercise 2, we were tasked with implementing some explicit test cases and some parameterized test cases based on the following screenshot:<br>
 
 ![test case suite screenshot](assets/E2_TestCases.PNG)
 
 These tests can be found under ecs/test. The file with the explicit tests is DateTest.java. The file with the parameterized tests that run OK is DateNextDateOKTest.java. The file with the parameterized test that result in an exception is DateNextDateExceptionTest.java.
+
+### Screenshot of the Tests after Exercise 2
+Here is a screenshot of the terminal after running the tests with the following command lines:
+```bash
+javac -encoding UTF-8 --source-path test -d dist -cp dist:lib/junit-platform-console-standalone-1.7.1.jar test/*.java
+```
+```bash
+java -jar lib/junit-platform-console-standalone-1.7.1.jar --class-path dist --scan-class-path
+```
+![terminal screenshot](assets/E2_Terminal.PNG)
