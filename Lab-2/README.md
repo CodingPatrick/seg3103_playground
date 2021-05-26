@@ -86,3 +86,114 @@ javac -encoding UTF-8 --source-path test -d dist -cp dist:lib/junit-platform-con
 java -jar lib/junit-platform-console-standalone-1.7.1.jar --class-path dist --scan-class-path
 ```
 ![terminal screenshot](assets/E2_Terminal.PNG)
+
+Here is the text output of the screenshot above (for clarity purposes)
+```bash
+Thanks for using JUnit! Support its development at https://junit.org/sponsoring
+
+╷
+├─ JUnit Jupiter ✔
+│  ├─ DateTest ✔
+│  │  ├─ nextDate_sample() ✔
+│  │  ├─ nextDate_tc10_test() ✔
+│  │  ├─ nextDate_tc11_test() ✔
+│  │  ├─ nextDate_tc12_test() ✔
+│  │  ├─ nextDate_tc13_test() ✔
+│  │  ├─ nextDate_tc14_test() ✔
+│  │  ├─ nextDate_tc15_test() ✔
+│  │  ├─ nextDate_tc16_test() ✔
+│  │  ├─ nextDate_tc17_test() ✔
+│  │  ├─ nextDate_tc18_test() ✔
+│  │  ├─ nextDate_tc19_test() ✔
+│  │  ├─ nextDate_tc20_test() ✔
+│  │  ├─ nextDate_tc1_test() ✔
+│  │  ├─ nextDate_tc2_test() ✔
+│  │  ├─ nextDate_tc3_test() ✔
+│  │  ├─ nextDate_tc4_test() ✔
+│  │  ├─ nextDate_tc5_test() ✔
+│  │  ├─ nextDate_tc6_test() ✔
+│  │  ├─ nextDate_tc7_test() ✔
+│  │  ├─ nextDate_tc8_test() ✔
+│  │  └─ nextDate_tc9_test() ✔
+│  └─ BitTest ✔
+│     ├─ constructor_int_ok() ✔
+│     ├─ constructor_int_tooLarge() ✔
+│     ├─ constructor_int_tooSmall() ✔
+│     ├─ constructor_Bit() ✔
+│     ├─ hashCode_values() ✔
+│     ├─ getIntValue() ✔
+│     ├─ equals() ✔
+│     ├─ toString_values() ✔
+│     ├─ or() ✔
+│     ├─ and() ✔
+│     ├─ not() ✔
+│     ├─ xor() ✔
+│     ├─ setValue() ✔
+│     └─ constructor_default_0() ✔
+└─ JUnit Vintage ✔
+   ├─ BitAndTest ✔
+   │  ├─ [0] ✔
+   │  │  └─ testAnd[0] ✔
+   │  ├─ [1] ✔
+   │  │  └─ testAnd[1] ✔
+   │  ├─ [2] ✔
+   │  │  └─ testAnd[2] ✔
+   │  └─ [3] ✔
+   │     └─ testAnd[3] ✔
+   ├─ DateNextDateOkTest ✔
+   │  ├─ [0] ✔
+   │  │  └─ test[0] ✔
+   │  ├─ [1] ✔
+   │  │  └─ test[1] ✔
+   │  ├─ [2] ✔
+   │  │  └─ test[2] ✔
+   │  ├─ [3] ✔
+   │  │  └─ test[3] ✔
+   │  ├─ [4] ✔
+   │  │  └─ test[4] ✔
+   │  ├─ [5] ✔
+   │  │  └─ test[5] ✔
+   │  ├─ [6] ✔
+   │  │  └─ test[6] ✔
+   │  ├─ [7] ✔
+   │  │  └─ test[7] ✔
+   │  ├─ [8] ✔
+   │  │  └─ test[8] ✔
+   │  ├─ [9] ✔
+   │  │  └─ test[9] ✔
+   │  ├─ [10] ✔
+   │  │  └─ test[10] ✔
+   │  ├─ [11] ✔
+   │  │  └─ test[11] ✔
+   │  ├─ [12] ✔
+   │  │  └─ test[12] ✔
+   │  ├─ [13] ✔
+   │  │  └─ test[13] ✔
+   │  └─ [14] ✔
+   │     └─ test[14] ✔
+   └─ DateNextDateExceptionTest ✔
+      ├─ [0] ✔
+      │  └─ test[0] ✔
+      ├─ [1] ✔
+      │  └─ test[1] ✔
+      ├─ [2] ✔
+      │  └─ test[2] ✔
+      ├─ [3] ✔
+      │  └─ test[3] ✔
+      └─ [4] ✔
+         └─ test[4] ✔
+
+Test run finished after 89 ms
+[        31 containers found      ]
+[         0 containers skipped    ]
+[        31 containers started    ]
+[         0 containers aborted    ]
+[        31 containers successful ]
+[         0 containers failed     ]
+[        59 tests found           ]
+[         0 tests skipped         ]
+[        59 tests started         ]
+[         0 tests aborted         ]
+[        59 tests successful      ]
+[         0 tests failed          ]
+```
