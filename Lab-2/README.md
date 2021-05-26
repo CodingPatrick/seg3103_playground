@@ -1,4 +1,4 @@
-# SEG 3103 Playground - Lab 2
+# Lab 02 - SEG 3103 Playground
 
 ### Team
 
@@ -29,6 +29,8 @@ java -jar  user-registration-app-0.1.0.jar
 ```
 Then we visit the Local Host website.
 ![local host screenshot](assets/LocalHost.PNG)
+
+After we fill out the table with Test Cases, Results and the Verdict
 
 | Test Case # | Test Case | Expected Result | Actual Result | Verdict (Pass, Fail, Inconclusive) |
 | --- | --- | --- | --- | --- |
