@@ -46,7 +46,7 @@ You can find screenshots under assets. Either Input_TCX.PNG or Output_TCX.PNG, w
 
 ## Exercise 2
 
-In Exercise 2, we were tasked with implementing some explicit test cases and some parameterized test cases based on the following screenshot:
+In Exercise 2, we were tasked with implementing some explicit test cases and some parameterized test cases based on the following screenshot:<br>
 ![terminal screenshot](assets/E2_TestCases.PNG)
 
 These tests can be found under ecs/test. The file with the explicit tests is DateTest.java. The file with the parameterized tests that run OK is DateNextDateOKTest.java. The file with the parameterized test that result in an exception is DateNextDateExceptionTest.java.
