@@ -67,6 +67,55 @@ java -jar lib/junit-platform-console-standalone-1.7.1.jar --class-path dist --sc
 ```
 ![terminal screenshot](assets/E1_Terminal.PNG)
 
+Here is the text output of the screenshot above (for clarity purposes)
+```bash
+Thanks for using JUnit! Support its development at https://junit.org/sponsoring
+
+╷
+├─ JUnit Jupiter ✔
+│  ├─ DateTest ✔
+│  │  ├─ nextDate_sample() ✔
+│  └─ BitTest ✔
+│     ├─ constructor_int_ok() ✔
+│     ├─ constructor_int_tooLarge() ✔
+│     ├─ constructor_int_tooSmall() ✔
+│     ├─ constructor_Bit() ✔
+│     ├─ hashCode_values() ✔
+│     ├─ getIntValue() ✔
+│     ├─ equals() ✔
+│     ├─ toString_values() ✔
+│     ├─ or() ✔
+│     ├─ and() ✔
+│     ├─ not() ✔
+│     ├─ xor() ✔
+│     ├─ setValue() ✔
+│     └─ constructor_default_0() ✔
+└─ JUnit Vintage ✔
+   └─ BitAndTest ✔
+      ├─ [0] ✔
+      │  └─ testAnd[0] ✔
+      ├─ [1] ✔
+      │  └─ testAnd[1] ✔
+      ├─ [2] ✔
+      │  └─ testAnd[2] ✔
+      └─ [3] ✔
+         └─ testAnd[3] ✔
+
+Test run finished after 79 ms
+[         9 containers found      ]
+[         0 containers skipped    ]
+[         9 containers started    ]
+[         0 containers aborted    ]
+[         9 containers successful ]
+[         0 containers failed     ]
+[        19 tests found           ]
+[         0 tests skipped         ]
+[        19 tests started         ]
+[         0 tests aborted         ]
+[        19 tests successful      ]
+[         0 tests failed          ]
+```
+
 ## Exercise 2
 
 ### Test case suite in the lab PowerPoint
