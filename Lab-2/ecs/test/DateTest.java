@@ -4,12 +4,14 @@ import org.junit.jupiter.api.Test;
 
 class DateTest {
 
+  /* Sample test that came with the lab files */
   @Test
   void nextDate_sample() {
     Date d = new Date(2020,5,3);
     assertEquals(new Date(2020,5,4), d.nextDate());
   }
 
+  /* Test with a Valid output -- Test 1 to Test 15 */
   @Test
   void nextDate_tc1_test() {
     Date d = new Date(1700,6,20);
@@ -100,6 +102,7 @@ class DateTest {
     assertEquals(new Date(3457,1,1), d.nextDate());
   }
 
+  /* Test that are invalid -- Test 16 to Test 20 */
   @Test
   void nextDate_tc16_test() {
     assertThrows(IllegalArgumentException.class, () -> new Date(1500,2,31));
