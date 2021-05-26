@@ -44,6 +44,17 @@ Then we visit the Local Host website.
 ### Screenshots for Exercise 1
 You can find screenshots under assets. Either Input_TCX.PNG or Output_TCX.PNG, where X is the Test Case Number.
 
+| Test Case # | Input | Output |
+| --- | --- | --- |
+| 1 | ![terminal screenshot](assets/Input_TC1.PNG) | ![terminal screenshot](assets/Output_TC1.PNG) |
+| 2 | ![terminal screenshot](assets/Input_TC2.PNG) | ![terminal screenshot](assets/Output_TC2.PNG) |
+| 3 | ![terminal screenshot](assets/Input_TC3.PNG) | ![terminal screenshot](assets/Output_TC3.PNG) |
+| 4 | ![terminal screenshot](assets/Input_TC4.PNG) | ![terminal screenshot](assets/Output_TC4.PNG) |
+| 5 | ![terminal screenshot](assets/Input_TC5.PNG) | ![terminal screenshot](assets/Output_TC5.PNG) |
+| 6 | ![terminal screenshot](assets/Input_TC6.PNG) | ![terminal screenshot](assets/Output_TC6.PNG) |
+| 7 | ![terminal screenshot](assets/Input_TC7.PNG) | ![terminal screenshot](assets/Output_TC7.PNG) |
+| 8 | ![terminal screenshot](assets/Input_TC8.PNG) | ![terminal screenshot](assets/Output_TC8.PNG) |
+
 ## Exercise 2
 
 In Exercise 2, we were tasked with implementing some explicit test cases and some parameterized test cases based on the following screenshot:<br>
