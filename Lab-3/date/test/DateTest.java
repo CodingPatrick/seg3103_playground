@@ -149,4 +149,36 @@ class DateTest {
     );
   }
 
+
+  // The following 4 tests are for the 100% statement coverage (tc21 - tc24)
+  @Test
+  void nextDate_invalid_tc21() {
+    assertThrows(
+      IllegalArgumentException.class,
+      () -> new Date(2021, 4, 31)
+    );
+  }
+
+  @Test
+  void nextDate_invalid_tc22() {
+    assertThrows(
+      IllegalArgumentException.class,
+      () -> new Date(2021, 3, 32)
+    );
+  }
+
+  @Test
+  void nextDate_invalid_tc23() {
+    assertThrows(
+      IllegalArgumentException.class,
+      () -> new Date(2020, 2, 30)
+    );
+  }
+
+  @Test
+  void toString_tc24() {
+    Date today = new Date(3456, 12, 31);
+    assertEquals(("3456/December/31"), today.toString());
+  }
+
 }
