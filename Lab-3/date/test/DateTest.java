@@ -163,7 +163,7 @@ class DateTest {
   void nextDate_invalid_tc22() {
     assertThrows(
       IllegalArgumentException.class,
-      () -> new Date(2021, 3, 32)
+      () -> new Date(2021, 9, 32)
     );
   }
 
@@ -177,8 +177,84 @@ class DateTest {
 
   @Test
   void toString_tc24() {
-    Date today = new Date(3456, 12, 31);
-    assertEquals(("3456/December/31"), today.toString());
+    Date today = new Date(3456, 11, 29);
+    assertEquals(("3456/November/29"), today.toString());
   }
+
+
+  // Trying to achieve 100% branch Coverage
+
+  // Coverage for the if statement @118 in date.java
+  @Test
+  void toString_tc25() {
+    Date today = new Date(3456, 6, 29);
+    assertEquals(("3456/June/29"), today.toString());
+  }
+
+  // @Test
+  // void toString_tc26() {
+  //   assertThrows(
+  //     IllegalArgumentException.class,
+  //     () -> new Date(1600, -1, 30)
+  //   );
+  // }
+
+  //@Test
+  // void toString_tc27() {
+  //   assertThrows(
+  //     IllegalArgumentException.class,
+  //     () -> new Date(1000, 12, 30)
+  //   );
+  // }
+
+    @Test
+    void  isLeapYear_tc26(){
+      Date leapYear = new Date(1600, 2, 27);
+      assertTrue(leapYear.isLeapYear());
+    }
+
+    
+    @Test 
+      void equals_tc27(){
+      Date today = new Date(3456, 6, 29);
+      assertFalse(today.equals(new String("Here")));
+    }
+
+    @Test 
+    void equals_tc28(){
+      Date day = new Date(3456, 6, 30);
+      Date day1 = new Date(356, 5, 29);
+      assertFalse(day.equals(day1));
+    }
+
+    @Test
+    void equals_tc29(){
+      Date day = new Date(3456, 6, 30);
+      Date day1 = new Date(3456, 5, 30);
+      assertFalse(day.equals(day1));
+      
+    }
+    // @Test
+    // void isEndOfTheMonth_tc30(){
+    //   Date day = new Date(2323, 5, 30);  
+    //   assertTrue(day.nextDate().equals(new Date(2323, 5, 31)));
+
+    //   day = new Date(2323, 5, 31);  
+    //   assertTrue(day.nextDate().equals(new Date(2323, 6, 1)));
+
+    //   day = new Date(2020, 2, 29);  
+    //   assertTrue(day.nextDate().equals(new Date(2020, 3, 1)));
+
+    //   day = new Date(2021, 3, 30);  
+    //   assertTrue(day.nextDate().equals(new Date(2021, 3, 31)));
+
+    //   day = new Date(2021, 5, 28);  
+    //   assertTrue(day.nextDate().equals(new Date(2021, 5, 29)));
+
+    //   day = new Date(2020, 5, 27);  
+    //   assertTrue(day.nextDate().equals(new Date(2020, 5, 28)));
+
+
+    // }
 
 }
