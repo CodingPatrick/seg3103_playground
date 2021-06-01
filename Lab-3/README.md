@@ -76,7 +76,7 @@ open ./report/index.html
 Here is proof that the report works and opens for computation:
 ![jacoco screenshot computation](assets/jacoco1_PNG.png)
 
-## Exercise 1 - Date
+## Exercise 1 - Date Coverage
 
 First we opened Jacoco to see the initial coverage.
 
@@ -111,10 +111,11 @@ Thanks for using JUnit! Support its development at https://junit.org/sponsoring
 │     ├─ nextDate_invalid_tc21() ✔
 │     ├─ nextDate_invalid_tc22() ✔
 │     ├─ nextDate_invalid_tc23() ✔
-│     ├─ equals_tc27() ✔
-│     ├─ equals_tc28() ✔
 │     ├─ equals_tc29() ✔
-│     ├─ isLeapYear_tc26() ✔
+│     ├─ equals_tc30() ✔
+│     ├─ equals_tc31() ✔
+│     ├─ equals_tc32() ✔
+│     ├─ isEndOfTheMonth_tc33() ✔
 │     ├─ nextDate_tc01() ✔
 │     ├─ nextDate_tc02() ✔
 │     ├─ nextDate_tc03() ✔
@@ -131,7 +132,9 @@ Thanks for using JUnit! Support its development at https://junit.org/sponsoring
 │     ├─ nextDate_tc14() ✔
 │     ├─ nextDate_tc15() ✔
 │     ├─ toString_tc24() ✔
-│     └─ toString_tc25() ✔
+│     ├─ toString_tc25() ✔
+│     ├─ toString_tc26() ✔
+│     └─ toString_tc27() ✔
 └─ JUnit Vintage ✔
    ├─ DateNextDateOkTest ✔
    │  ├─ [0] ✔
@@ -187,20 +190,22 @@ Thanks for using JUnit! Support its development at https://junit.org/sponsoring
       └─ [4] ✔
          └─ testNextDate[4] ✔
 
-Test run finished after 137 ms
+Test run finished after 133 ms
 [        31 containers found      ]
 [         0 containers skipped    ]
 [        31 containers started    ]
 [         0 containers aborted    ]
 [        31 containers successful ]
 [         0 containers failed     ]
-[        54 tests found           ]
+[        58 tests found           ]
 [         0 tests skipped         ]
-[        54 tests started         ]
+[        58 tests started         ]
 [         0 tests aborted         ]
-[        54 tests successful      ]
+[        58 tests successful      ]
 [         0 tests failed          ]
 ```
+
+### Answering the question CODE COVERAGE Question
 
 Then after seeing if the tests work, generate and open a report for Jacoco using these two command lines:
 ```bash
@@ -209,10 +214,28 @@ java -jar lib/jacococli.jar report jacoco.exec --classfiles dist --sourcefiles s
 ```bash
 open ./report/index.html
 ```
+After adding aditional tests to try to achieve 100% coverage, we believe it is possible because we have 100% coverage in our screenshots below.
+
+We have 100% instruction coverage and 98% branch coverage. The only line that is missing a branch is:
+```bash
+if (day == 31 || (day == 30 && isThirtyDayMonth()) || (this.month == 2) && ( (day == 29 && leap) || (day == 28) ))
+```
+This line is missing 1 of 14 branches. It was refactored to reduce the number of branches from 16 to 14 to get more coverage.
+
 Here is proof of our coverage when opening the report:
 ![jacoco screenshot date final](assets/jacoco2_PNG.png)
 ![jacoco screenshot date final](assets/jacoco3_PNG.png)
 ![jacoco screenshot date final](assets/jacoco4_PNG.png)
 
+### Answering the question REFACTORING Question
+
+After refactoring our code our coverage improved. To refactor our code, as mentionned above, we changed one of the if statements to reduce the total number of branches from 16 to 14. We also refactored the setDay() function. It has many calls to monthNames[month-1]. We made a new String variable to reduce the amount of times the code has to compute monthNames[month-1] as seen in the screenshot below.
+
+![refactoring screenshot date](assets/refactoring_PNG.png)
+
+Also, for your reference, this was our Jacoco report before refactoring. As you can see in comparison to the screenshots above, there were a lot less branches covered. We managed to go from 99% instruction coverage and 89% branch coverage to 100% instruction coverage and 98% branch coverage.
+
+![jacoco screenshot date initial](assets/jacoco5_PNG.png)
+![jacoco screenshot date initial](assets/jacoco6_PNG.png)
 
 
