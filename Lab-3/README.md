@@ -205,7 +205,7 @@ Test run finished after 133 ms
 [         0 tests failed          ]
 ```
 
-### Answering the question CODE COVERAGE Question
+### Answering the CODE COVERAGE Question
 
 Then after seeing if the tests work, generate and open a report for Jacoco using these two command lines:
 ```bash
@@ -227,7 +227,7 @@ Here is proof of our coverage when opening the report:
 ![jacoco screenshot date final](assets/jacoco3_PNG.png)
 ![jacoco screenshot date final](assets/jacoco4_PNG.png)
 
-### Answering the question REFACTORING Question
+### Answering the REFACTORING Question
 
 After refactoring our code our coverage improved. To refactor our code, as mentionned above, we changed one of the if statements to reduce the total number of branches from 16 to 14. We also refactored the setDay() function. It has many calls to monthNames[month-1]. We made a new String variable to reduce the amount of times the code has to compute monthNames[month-1] as seen in the screenshot below.
 
