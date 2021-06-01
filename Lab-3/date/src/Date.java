@@ -43,6 +43,9 @@ public class Date {
 	 *   - less or equal to 30 for February if year is non-leap
 	 */
 	private void setDay(int day) {
+
+		String errorMonth = monthNames[month-1];
+
 		if (day < 1) {
 			throw new IllegalArgumentException("day must greater or equal to 1.");
 		}
@@ -50,13 +53,13 @@ public class Date {
 			throw new IllegalArgumentException("day must less or equal to 31.");
 		}
 		if (isThirtyDayMonth() && day > 30) {
-			throw new IllegalArgumentException("day must less than 30 for month " + monthNames[month-1]);
+			throw new IllegalArgumentException("day must less than 30 for month " + errorMonth);
 		}
 		if (this.month == 2 && isLeapYear() && day > 29) {
-			throw new IllegalArgumentException("day must less than 29 for month " + monthNames[month-1] + " on a leap year.");
+			throw new IllegalArgumentException("day must less than 29 for month " + errorMonth + " on a leap year.");
 		}
 		if (this.month == 2 && !isLeapYear() && day > 28) {
-			throw new IllegalArgumentException("day must less than 28 for month " + monthNames[month-1] + " on a non leap year.");
+			throw new IllegalArgumentException("day must less than 28 for month " + errorMonth + " on a non leap year.");
 		}
 		this.day = day;
 	}
@@ -65,9 +68,11 @@ public class Date {
 	 * Check validity of the month when creating a new Date. month must be between 1 and 12.
 	 */
 	private void setMonth(int month) {
+		
 		if (month < 1 || month > 12) {
-			throw new IllegalArgumentException("month must be between 1 and 12.");
+			throw new IllegalArgumentException("Month Must be between 1 and 12");
 		}
+
 		this.month = month;
 	}
 
@@ -106,7 +111,7 @@ public class Date {
 	 */
 	private boolean isEndOfMonth() {
 		boolean leap = isLeapYear();
-		if (day == 31 || (day == 30 && isThirtyDayMonth()) || (this.month == 2 && ((day == 29 && leap) || (day == 28 && !leap))))
+		if (day == 31 || (day == 30 && isThirtyDayMonth()) || (this.month == 2) && ( (day == 29 && leap) || (day == 28) ))
 			return true;
 		else return false;
 	}

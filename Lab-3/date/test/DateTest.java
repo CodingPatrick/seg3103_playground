@@ -181,6 +181,7 @@ class DateTest {
     assertEquals(("3456/November/29"), today.toString());
   }
 
+  
 
   // Trying to achieve 100% branch Coverage
 
@@ -191,70 +192,59 @@ class DateTest {
     assertEquals(("3456/June/29"), today.toString());
   }
 
-  // @Test
-  // void toString_tc26() {
-  //   assertThrows(
-  //     IllegalArgumentException.class,
-  //     () -> new Date(1600, -1, 30)
-  //   );
-  // }
+  @Test
+  void toString_tc26() {
+    assertThrows(
+      IllegalArgumentException.class,
+      () -> new Date(1600, -1, 30)
+    );
+  }
 
-  //@Test
-  // void toString_tc27() {
-  //   assertThrows(
-  //     IllegalArgumentException.class,
-  //     () -> new Date(1000, 12, 30)
-  //   );
-  // }
+  @Test
+  void toString_tc27() {
+    Date today = new Date(1600, 9, 20);
+    assertEquals(today.toString(), "1600/September/20");
+  }
 
     @Test
-    void  isLeapYear_tc26(){
-      Date leapYear = new Date(1600, 2, 27);
+    void  isLeapYear_tc28(){
+      Date leapYear = new Date(1600, 4, 27);
       assertTrue(leapYear.isLeapYear());
     }
 
     
     @Test 
-      void equals_tc27(){
+      void equals_tc29(){
       Date today = new Date(3456, 6, 29);
-      assertFalse(today.equals(new String("Here")));
+      assertFalse(today.equals("HERE"));
     }
 
     @Test 
-    void equals_tc28(){
+    void equals_tc30(){
       Date day = new Date(3456, 6, 30);
-      Date day1 = new Date(356, 5, 29);
+      Date day1 = new Date(356, 6, 29);
       assertFalse(day.equals(day1));
     }
 
     @Test
-    void equals_tc29(){
+    void equals_tc31(){
       Date day = new Date(3456, 6, 30);
       Date day1 = new Date(3456, 5, 30);
       assertFalse(day.equals(day1));
-      
     }
-    // @Test
-    // void isEndOfTheMonth_tc30(){
-    //   Date day = new Date(2323, 5, 30);  
-    //   assertTrue(day.nextDate().equals(new Date(2323, 5, 31)));
 
-    //   day = new Date(2323, 5, 31);  
-    //   assertTrue(day.nextDate().equals(new Date(2323, 6, 1)));
-
-    //   day = new Date(2020, 2, 29);  
-    //   assertTrue(day.nextDate().equals(new Date(2020, 3, 1)));
-
-    //   day = new Date(2021, 3, 30);  
-    //   assertTrue(day.nextDate().equals(new Date(2021, 3, 31)));
-
-    //   day = new Date(2021, 5, 28);  
-    //   assertTrue(day.nextDate().equals(new Date(2021, 5, 29)));
-
-    //   day = new Date(2020, 5, 27);  
-    //   assertTrue(day.nextDate().equals(new Date(2020, 5, 28)));
+    @Test
+    void equals_tc32(){
+      Date day = new Date(3456, 6, 30);
+      Date day1 = new Date(3456, 6, 29);
+      assertFalse(day.equals(day1));
+    }
 
 
-    // }
+    @Test
+    void isEndOfTheMonth_tc33(){
+      Date day = new Date(2021, 2, 28);  
+      assertTrue(day.nextDate().equals(new Date(2021, 3, 1)));
+    }
 
 }

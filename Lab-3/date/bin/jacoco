@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # Remove any class files from dist and all jacoco coverage files
-# rm -f ./dist/*.class
-# rm jacoco.exec
-# rm -fr ./report
+rm -f ./dist/*.class
+rm jacoco.exec
+rm -fr ./report
 
 # Compile the application
 javac -encoding UTF-8 --source-path src -d dist src/*.java
