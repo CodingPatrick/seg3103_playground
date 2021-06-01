@@ -13,6 +13,7 @@ Student Number: 300109692
 Professor: Andrew Forward, aforward@uottawa.ca<br>
 TA: Zahra Kakavand, zkaka044@uottawa.ca<br>
 TA: Henry Chen, zchen229@uottawa.ca<br>
+TA: Nazanin Bayati Chaleshtari, nbaya076@uottawa.ca<br>
 
 Course: SEG 3103<br>
 Date: Summer 2021
