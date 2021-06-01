@@ -233,7 +233,7 @@ After refactoring our code our coverage improved. To refactor our code, as menti
 
 ![refactoring screenshot date](assets/refactoring_PNG.png)
 
-Also, for your reference, this was our Jacoco report before refactoring. As you can see in comparison to the screenshots above, there were a lot less branches covered. We managed to go from 99% instruction coverage and 89% branch coverage to 100% instruction coverage and 98% branch coverage.
+Also, for your reference, this was our Jacoco report before refactoring and before making condition coverage tests. As you can see in comparison to the screenshots above, there were a lot less branches covered. We managed to go from 99% instruction coverage and 89% branch coverage to 100% instruction coverage and 98% branch coverage.
 
 ![jacoco screenshot date initial](assets/jacoco5_PNG.png)
 ![jacoco screenshot date initial](assets/jacoco6_PNG.png)
