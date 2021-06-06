@@ -32,7 +32,7 @@ public class TicTacToeTest {
         TicTacToe board = new TicTacToe(3,3);
         board.playNext(1,1);
         
-        assertEquals(board.whoPlaysNext(), "X");
+        assertEquals(board.whoPlaysNext(), "O");
         
       
     }
