@@ -26,4 +26,14 @@ public class TicTacToeTest {
         assertEquals(board.playNext(1,1), "cannot play, field is occupied");
     }
     
+    @Test
+    public void whoPlaysNext(){
+        // testing who plays next
+        TicTacToe board = new TicTacToe(3,3);
+        board.playNext(1,1);
+        
+        assertEquals(board.whoPlaysNext(), "X");
+        
+      
+    }
 }

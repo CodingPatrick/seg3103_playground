@@ -38,10 +38,12 @@ public class TicTacToe{
         }
 
         if (this.counter%2 == 0){
+            counter++;
             board[row][col] = "X";
             return "X";
         }
 
+        counter++;
         board [row][col] = "O";
         return "O";
 
@@ -51,6 +53,13 @@ public class TicTacToe{
     private boolean isNotEmpty(int row, int col){
         return board[row][col] != null;
     }   
+
+    public String whoPlaysNext(){
+        if (this.counter%2 == 0){
+            return "X";
+        }
+        return "O";
+    }
 
 
     public String toString(){
