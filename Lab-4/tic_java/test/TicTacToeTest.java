@@ -27,7 +27,7 @@ public class TicTacToeTest {
     }
     
     @Test
-    public void whoPlaysNext(){
+    public void whoPlaysNext_tc4(){
         // testing who plays next
         TicTacToe board = new TicTacToe(3,3);
         board.playNext(1,1);

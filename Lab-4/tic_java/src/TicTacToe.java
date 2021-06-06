@@ -37,15 +37,13 @@ public class TicTacToe{
             return "cannot play, field is occupied";
         }
 
-        if (this.counter%2 == 0){
-            counter++;
-            board[row][col] = "X";
-            return "X";
-        }
+        String turn = whoPlaysNext();
 
         counter++;
-        board [row][col] = "O";
-        return "O";
+        board[row][col] = turn;
+        return turn;
+
+
 
     }
 
