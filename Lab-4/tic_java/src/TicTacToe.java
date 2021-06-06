@@ -59,6 +59,22 @@ public class TicTacToe{
         return "O";
     }
 
+    public void reset(){
+        
+        for (int i = 0; i < this.row; i++){
+            for (int j = 0; j < this.col; j++){
+                board[i][j] = null;
+            }
+        }
+
+        this.counter = 0;
+    }
+
+    public String getValue(int row , int col){
+        checkBoundary(row, col, false);
+        return board[row][col];
+    }
+
 
     public String toString(){
         return "not Implemented";

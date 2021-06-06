@@ -33,7 +33,14 @@ public class TicTacToeTest {
         board.playNext(1,1);
         
         assertEquals(board.whoPlaysNext(), "O");
-        
-      
+    }
+
+    @Test
+    public void reset_tc5(){
+        // testing who plays next
+        TicTacToe board = new TicTacToe(3,3);
+        board.playNext(1,1);
+        board.reset();
+        assertEquals(board.getValue(1,1), "X");
     }
 }
