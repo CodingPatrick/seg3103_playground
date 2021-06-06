@@ -17,5 +17,13 @@ public class TicTacToeTest {
         TicTacToe board = new TicTacToe(3,3);
         assertEquals(board.playNext(1,1), "X");
     }
+
+    @Test
+    public void playNext_tc3(){
+        // testing that I cannot overwrite a spot 
+        TicTacToe board = new TicTacToe(3,3);
+        assertEquals(board.playNext(1,1), "X");
+        assertEquals(board.playNext(1,1), "O");
+    }
     
 }

@@ -32,6 +32,10 @@ public class TicTacToe{
 
         checkBoundary(row, col, false);
 
+        if (board[row][col] != null){
+            return "cannot play, field is occupied";
+        }
+
         if (this.counter%2 == 0){
             board[row][col] = "X";
             return "X";
@@ -42,12 +46,10 @@ public class TicTacToe{
 
     }
 
+
+
     public String toString(){
-
-
-
         return "not Implemented";
-
     }
     
 
