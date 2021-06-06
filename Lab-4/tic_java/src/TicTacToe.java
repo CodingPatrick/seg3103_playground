@@ -60,12 +60,8 @@ public class TicTacToe{
     }
 
     public void reset(){
-        
-        for (int i = 0; i < this.row; i++){
-            for (int j = 0; j < this.col; j++){
-                board[i][j] = null;
-            }
-        }
+
+        this.board = new String[this.row][this.col];
 
         this.counter = 0;
     }
