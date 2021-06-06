@@ -23,7 +23,7 @@ public class TicTacToeTest {
         // testing that I cannot overwrite a spot 
         TicTacToe board = new TicTacToe(3,3);
         assertEquals(board.playNext(1,1), "X");
-        assertEquals(board.playNext(1,1), "O");
+        assertEquals(board.playNext(1,1), "cannot play, field is occupied");
     }
     
 }
