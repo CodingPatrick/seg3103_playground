@@ -15,7 +15,7 @@ public class TicTacToeTest {
     public void playNext_tc2(){
         // testing the default 
         TicTacToe board = new TicTacToe(3,3);
-        assertEquals(board.playNext(1,1), "O");
+        assertEquals(board.playNext(1,1), "X");
     }
     
 }

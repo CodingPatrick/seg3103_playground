@@ -7,7 +7,7 @@ public class TicTacToe{
 
     public TicTacToe(int row, int col){
         
-        if (ZeroBoundary()){
+        if (ZeroBoundary(row, col)){
             throw new IllegalArgumentException("Row and Cols must be greater than 0");
         }
         
@@ -18,7 +18,7 @@ public class TicTacToe{
 
     }
 
-    private boolean ZeroBoundary(){
+    private boolean ZeroBoundary(int row, int col){
         if (row <= 0 || col <= 0){
             return true;
         }
@@ -26,14 +26,15 @@ public class TicTacToe{
         return false;
     }
 
-    public String playNext(int col, int row){
+    public String playNext(int row, int col){
+
 
         if (row <= 0 || col <= 0){  
             throw new IllegalArgumentException("Row and Cols must be greater than 0"); 
         }
 
         if (row >= this.row || col >= this.col){
-            throw new IllegalArgumentException("Row and Cols must be greater than 0"); 
+            throw new IllegalArgumentException("Row and Cols inputs must be less than the board col and row"); 
         }
 
         if (this.counter%2 == 0){
