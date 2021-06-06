@@ -32,7 +32,8 @@ public class TicTacToe{
 
         checkBoundary(row, col, false);
 
-        if (board[row][col] != null){
+
+        if (isNotEmpty(row, col)){
             return "cannot play, field is occupied";
         }
 
@@ -46,6 +47,10 @@ public class TicTacToe{
 
     }
 
+
+    private boolean isNotEmpty(int row, int col){
+        return board[row][col] != null;
+    }   
 
 
     public String toString(){
