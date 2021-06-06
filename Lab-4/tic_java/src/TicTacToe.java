@@ -1,8 +1,9 @@
 public class TicTacToe{
 
-    private boolean[][] board;
+    private String[][] board;
     private int row = 0;
     private int col = 0;
+    private int counter = 0;
 
     public TicTacToe(int row, int col){
         
@@ -13,7 +14,7 @@ public class TicTacToe{
         this.row = row;
         this.col = col;
 
-        board = new boolean[row][col];
+        board = new String[row][col];
 
     }
 
@@ -25,11 +26,29 @@ public class TicTacToe{
         return false;
     }
 
+    public String playNext(int col, int row){
+
+        if (row <= 0 || col <= 0){  
+            throw new IllegalArgumentException("Row and Cols must be greater than 0"); 
+        }
+
+        if (row >= this.row || col >= this.col){
+            throw new IllegalArgumentException("Row and Cols must be greater than 0"); 
+        }
+
+        if (this.counter%2 == 0){
+            board[row][col] = "X";
+            return "X";
+        }
+
+        board [row][col] = "O";
+        return "O";
+
+    }
+
     public String toString(){
 
-        if (row == 0 && col == 0){
-            return "No Board exists";
-        }
+
 
         return "not Implemented";
 

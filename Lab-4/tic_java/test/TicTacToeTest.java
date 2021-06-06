@@ -10,5 +10,12 @@ public class TicTacToeTest {
         // testing the default 
         assertThrows(IllegalArgumentException.class, () -> new TicTacToe(0,0) );
     }
+
+    @Test
+    public void playNext_tc2(){
+        // testing the default 
+        TicTacToe board = new TicTacToe(3,3);
+        assertEquals(board.playNext(1,1), "O");
+    }
     
 }
