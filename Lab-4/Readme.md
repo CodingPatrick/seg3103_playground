@@ -8,4 +8,5 @@
 
 ## Commits Akram El-Gaouny
 
-| Commit Number | Implementation  | Passing Test  | Failing Test  | Refactor
+| Commit Number | Implementation  | Passing Test  | Failing Test  | Refactor |
+| --------------| --------------- | ------------- | ------------- | -------- |
