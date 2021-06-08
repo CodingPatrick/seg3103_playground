@@ -31,36 +31,21 @@ defmodule Grades.Calculator do
   end
 
   # Helper method 2 for Question 2.4
-  def letter_numeric(mark, failed) do
-    if is_binary(failed) do
+  def letter_numeric(mark, indexToUse) do
+    
       cond do
-        mark > 0.895 -> "A+"
-        mark > 0.845 -> "A"
-        mark > 0.795 -> "A-"
-        mark > 0.745 -> "B+"
-        mark > 0.695 -> "B"
-        mark > 0.645 -> "C+"
-        mark > 0.595 -> "C"
-        mark > 0.545 -> "D+"
-        mark > 0.495 -> "D"
-        mark > 0.395 -> "E"
-        :else -> "F"
+        mark > 0.895 -> Enum.at(indexToUse,0)
+        mark > 0.845 -> Enum.at(indexToUse,1)
+        mark > 0.795 -> Enum.at(indexToUse,2)
+        mark > 0.745 -> Enum.at(indexToUse,3)
+        mark > 0.695 -> Enum.at(indexToUse,4)
+        mark > 0.645 -> Enum.at(indexToUse,5)
+        mark > 0.595 -> Enum.at(indexToUse,6)
+        mark > 0.545 -> Enum.at(indexToUse,7)
+        mark > 0.495 -> Enum.at(indexToUse,8)
+        mark > 0.395 -> Enum.at(indexToUse,9)
+        :else -> Enum.at(indexToUse,10)
       end
-    else
-      cond do
-        mark > 0.895 -> 10
-        mark > 0.845 -> 9
-        mark > 0.795 -> 8
-        mark > 0.745 -> 7
-        mark > 0.695 -> 6
-        mark > 0.645 -> 5
-        mark > 0.595 -> 4
-        mark > 0.545 -> 3
-        mark > 0.495 -> 2
-        mark > 0.395 -> 1
-        :else -> 0
-      end
-    end
   end
 
   # Refactored code that was provided as part of the homework
@@ -83,7 +68,8 @@ defmodule Grades.Calculator do
       failed
     else
       mark = calculate_grade(avg_labs, avg_homework, midterm, final)
-      letter_numeric(mark, failed)
+      index = ["A+", "A", "A-", "B+", "B", "C+", "C", "D+", "D", "E", "F"]
+      letter_numeric(mark, index)
     end
   end
 
@@ -98,8 +84,9 @@ defmodule Grades.Calculator do
     if ftp do
       failed
     else
+      index = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
       mark = calculate_grade(avg_labs, avg_homework, midterm, final)
-      letter_numeric(mark, failed)
+      letter_numeric(mark, index)
     end
   end
 end
