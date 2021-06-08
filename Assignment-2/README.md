@@ -25,25 +25,31 @@ Date: Thursday June 10, 2021
 ### Question 1.1
 #### Draw the simplified control flow graph corresponding to each of the methods percentage_grade, letter_grade, and numeric_grade.
 
-Percentage grade:
+##### Percentage grade:
+
 ![precentage grade screenshot](assets/percentage_grade.png)
 
 Please Note That The diagram below is based on the Line Number of the picture above.
 At a condition Right mean True and Left Means False.
+
 ![precentage grade screenshot](assets/percentage_grade_diagram.png)
 
-Letter grade:
+##### Letter grade:
+
 ![letter grade screenshot](assets/letter_grade.png)
 
 Please Note That The diagram below is based on the Line Number of the picture above.
 At a condition Right mean True and Left Means False.
+
 ![letter grade screenshot](assets/letter_grade_diagram.png)
 
-Numeric grade:
+##### Numeric grade:
+
 ![numeric grade screenshot](assets/numeric_grade.png)
 
 Please Note That The diagram below is based on the Line Number of the picture above.
 At a condition Right mean True and Left Means False.
+
 ![numeric grade screenshot](assets/numeric_grade_diagram.png)
 
 ### Question 1.2
@@ -51,10 +57,7 @@ At a condition Right mean True and Left Means False.
 
 | Notes for Reading the Table |
 | --- |
-| 
-* The Conditional Branches are Labeled in the corresponding control-flow diagrams above (Ex: B1, D2, etc.) 
-* For the conditions, I put the node where there’s a condition and what condition was evaluated. For example, (6-True) means that the condition in the if statement at line 6 of the code provided above was executed as true.
-* Some conditions have multiple T/F, for example (45-True,True,True). What this means is that in line 45 there were three conditions and all of these conditions were true for a specific test |
+| * The Conditional Branches are Labeled in the corresponding control-flow diagrams above (Ex: B1, D2, etc.) <br>* For the conditions, I put the node where there’s a condition and what condition was evaluated. For example, (6-True) means that the condition in the if statement at line 6 of the code provided above was executed as true. <br> * Some conditions have multiple T/F, for example (45-True,True,True). What this means is that in line 45 there were three conditions and all of these conditions were true for a specific test |
 
 | Test Case Number | Test Data | Expected Results | Conditions Covered | Branches Covered |
 | --- | --- | --- | --- | --- |
@@ -67,6 +70,7 @@ At a condition Right mean True and Left Means False.
 Implemented in grades/test/grades/calculator_test.exs
 
 The following screenshot shows that all the tests have passed for the Grades.Calculator Module.
+
 ![terminal screenshot](assets/terminal.png)
 
 ### Question 1.4:  
@@ -78,13 +82,16 @@ To address the limitation of a tool that gives you only statement coverage, you 
 
 Screenshots for coverages:
 
-Percentage grade:
+##### Percentage grade:
+
 ![coverage screenshot percentage](assets/coverage_percentage.png)
 
-Letter grade: 
+##### Letter grade: 
+
 ![coverage screenshot letter](assets/coverage_letter.png)
 
-Numeric grade:
+##### Numeric grade:
+
 ![coverage screenshot numeric](assets/coverage_numeric.png)
 
 ## Problem 2
@@ -95,6 +102,7 @@ Numeric grade:
 See changed made on commit: 
 
 Screenshot of helper method:
+
 ![question 2.1 helper methods](assets/problem2_question1.png)
 
 ### Question 2.2
@@ -111,6 +119,7 @@ Screenshot of helper method:
 See changed made on commit: 
 
 Screenshot of helper method:
+
 ![question 2.3 helper methods](assets/problem2_question3.png)
 
 ### Question 2.4 
@@ -119,4 +128,5 @@ Screenshot of helper method:
 See changed made on commit: 
 
 Screenshot of helper method:
+
 ![question 2.4 helper methods](assets/problem2_question4.png)
