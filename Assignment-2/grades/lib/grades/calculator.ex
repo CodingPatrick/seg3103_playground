@@ -31,8 +31,37 @@ defmodule Grades.Calculator do
   end
 
   # Helper method 2 for Question 2.4
-
-
+  def letter_numeric(mark, failed) do
+    if is_binary(failed) do
+      cond do
+        mark > 0.895 -> "A+"
+        mark > 0.845 -> "A"
+        mark > 0.795 -> "A-"
+        mark > 0.745 -> "B+"
+        mark > 0.695 -> "B"
+        mark > 0.645 -> "C+"
+        mark > 0.595 -> "C"
+        mark > 0.545 -> "D+"
+        mark > 0.495 -> "D"
+        mark > 0.395 -> "E"
+        :else -> "F"
+      end
+    else
+      cond do
+        mark > 0.895 -> 10
+        mark > 0.845 -> 9
+        mark > 0.795 -> 8
+        mark > 0.745 -> 7
+        mark > 0.695 -> 6
+        mark > 0.645 -> 5
+        mark > 0.595 -> 4
+        mark > 0.545 -> 3
+        mark > 0.495 -> 2
+        mark > 0.395 -> 1
+        :else -> 0
+      end
+    end
+  end
 
   # Refactored code that was provided as part of the homework
   def percentage_grade(%{homework: homework, labs: labs, midterm: midterm, final: final}) do
@@ -49,45 +78,12 @@ defmodule Grades.Calculator do
     num_labs = number_of_labs(labs)
 
     ftp = failed_to_participate(avg_homework, avg_exams, num_labs)
+    failed = "EIN"
     if ftp do
-      "EIN"
+      failed
     else
       mark = calculate_grade(avg_labs, avg_homework, midterm, final)
-
-      cond do
-        mark > 0.895 ->
-          "A+"
-
-        mark > 0.845 ->
-          "A"
-
-        mark > 0.795 ->
-          "A-"
-
-        mark > 0.745 ->
-          "B+"
-
-        mark > 0.695 ->
-          "B"
-
-        mark > 0.645 ->
-          "C+"
-
-        mark > 0.595 ->
-          "C"
-
-        mark > 0.545 ->
-          "D+"
-
-        mark > 0.495 ->
-          "D"
-
-        mark > 0.395 ->
-          "E"
-
-        :else ->
-          "F"
-      end
+      letter_numeric(mark, failed)
     end
   end
 
@@ -98,45 +94,12 @@ defmodule Grades.Calculator do
     num_labs = number_of_labs(labs)
 
     ftp = failed_to_participate(avg_homework, avg_exams, num_labs)
+    failed = 0
     if ftp do
-      0
+      failed
     else
       mark = calculate_grade(avg_labs, avg_homework, midterm, final)
-
-      cond do
-        mark > 0.895 ->
-          10
-
-        mark > 0.845 ->
-          9
-
-        mark > 0.795 ->
-          8
-
-        mark > 0.745 ->
-          7
-
-        mark > 0.695 ->
-          6
-
-        mark > 0.645 ->
-          5
-
-        mark > 0.595 ->
-          4
-
-        mark > 0.545 ->
-          3
-
-        mark > 0.495 ->
-          2
-
-        mark > 0.395 ->
-          1
-
-        :else ->
-          0
-      end
+      letter_numeric(mark, failed)
     end
   end
 end
