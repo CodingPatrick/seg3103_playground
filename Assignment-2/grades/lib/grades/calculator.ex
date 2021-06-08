@@ -24,15 +24,15 @@ defmodule Grades.Calculator do
   end
 
   # Helper method 1 for Question 2.4
-  def number_of_labs(labs) do
-    labs
-    |> Enum.reject(fn mark -> mark < 0.25 end)
+  def filter_and_count(array, thresehold) do
+    array
+    |> Enum.reject(fn mark -> mark < thresehold end)
     |> Enum.count()
   end
 
   # Helper method 2 for Question 2.4
   def letter_numeric(mark, indexToUse) do
-    
+
       cond do
         mark > 0.895 -> Enum.at(indexToUse,0)
         mark > 0.845 -> Enum.at(indexToUse,1)
@@ -60,7 +60,7 @@ defmodule Grades.Calculator do
     avg_homework = avg(homework)
     avg_labs = avg(labs)
     avg_exams = (midterm + final) / 2
-    num_labs = number_of_labs(labs)
+    num_labs = filter_and_count(labs, 0.25)
 
     ftp = failed_to_participate(avg_homework, avg_exams, num_labs)
     failed = "EIN"
@@ -77,7 +77,7 @@ defmodule Grades.Calculator do
     avg_homework = avg(homework)
     avg_labs = avg(labs)
     avg_exams = (midterm + final) / 2
-    num_labs = number_of_labs(labs)
+    num_labs = filter_and_count(labs, 0.25)
 
     ftp = failed_to_participate(avg_homework, avg_exams, num_labs)
     failed = 0
