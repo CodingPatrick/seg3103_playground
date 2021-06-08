@@ -23,18 +23,22 @@ defmodule Grades.Calculator do
     0.2 * avg_labs + 0.3 * avg_homework + 0.2 * midterm + 0.3 * final
   end
 
-  # Helper method for Question 2.4
+  # Helper method 1 for Question 2.4
   def number_of_labs(labs) do
     labs
     |> Enum.reject(fn mark -> mark < 0.25 end)
     |> Enum.count()
   end
 
+  # Helper method 2 for Question 2.4
+
+
+
   # Refactored code that was provided as part of the homework
   def percentage_grade(%{homework: homework, labs: labs, midterm: midterm, final: final}) do
     avg_homework = avg(homework)
     avg_labs = avg(labs)
-    mark = 0.2 * avg_labs + 0.3 * avg_homework + 0.2 * midterm + 0.3 * final
+    mark = calculate_grade(avg_labs, avg_homework, midterm, final)
     round(mark * 100)
   end
 
