@@ -25,7 +25,7 @@ Date: Thursday June 10, 2021
 ### Question 1.1
 #### Draw the simplified control flow graph corresponding to each of the methods percentage_grade, letter_grade, and numeric_grade.
 
-##### Percentage grade:
+#### Percentage grade:
 
 ![precentage grade screenshot](assets/percentage_grade.png)
 
@@ -34,7 +34,7 @@ At a condition Right mean True and Left Means False.
 
 ![precentage grade screenshot](assets/percentage_grade_diagram.png)
 
-##### Letter grade:
+#### Letter grade:
 
 ![letter grade screenshot](assets/letter_grade.png)
 
@@ -43,7 +43,7 @@ At a condition Right mean True and Left Means False.
 
 ![letter grade screenshot](assets/letter_grade_diagram.png)
 
-##### Numeric grade:
+#### Numeric grade:
 
 ![numeric grade screenshot](assets/numeric_grade.png)
 
@@ -82,15 +82,15 @@ To address the limitation of a tool that gives you only statement coverage, you 
 
 Screenshots for coverages:
 
-##### Percentage grade:
+#### Percentage grade:
 
 ![coverage screenshot percentage](assets/coverage_percentage.png)
 
-##### Letter grade: 
+#### Letter grade: 
 
 ![coverage screenshot letter](assets/coverage_letter.png)
 
-##### Numeric grade:
+#### Numeric grade:
 
 ![coverage screenshot numeric](assets/coverage_numeric.png)
 
