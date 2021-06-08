@@ -32,7 +32,6 @@ defmodule Grades.Calculator do
 
   # Helper method 2 for Question 2.4
   def letter_numeric(mark, indexToUse) do
-
       cond do
         mark > 0.895 -> Enum.at(indexToUse,0)
         mark > 0.845 -> Enum.at(indexToUse,1)
