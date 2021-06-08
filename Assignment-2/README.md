@@ -55,14 +55,13 @@ At a condition Right mean True and Left Means False.
 ### Question 1.2
 #### Provide a white box test design for 100% branch coverage of	the methods percentage_grade, letter_grade, and numeric_grade. Your test suite will be evaluated	on the	number of its	test cases (try to have the smallest possible number of test cases	that will allow	 100% branch	coverage). Use the following template for	 your test case	design:
 
-| Notes for Reading the Table |
-| --- |
-| * The Conditional Branches are Labeled in the corresponding control-flow diagrams above (Ex: B1, D2, etc.) <br>* For the conditions, I put the node where there’s a condition and what condition was evaluated. For example, (6-True) means that the condition in the if statement at line 6 of the code provided above was executed as true. <br> * Some conditions have multiple T/F, for example (45-True,True,True). What this means is that in line 45 there were three conditions and all of these conditions were true for a specific test |
+#### Notes for Reading the Table
 
-| Test Case Number | Test Data | Expected Results | Conditions Covered | Branches Covered |
-| --- | --- | --- | --- | --- |
-| 1 | Homework: []<br>labs: []<br>midterm : 0.70<br>final: 0.70 | 35 | 6-True<br>13-True | B1, D1 |
-| 2 | Homework: [1,1]<br>labs: [1, 0.6, 1, 1]<br>midterm : 0.70<br>final: 0.70 | 83 | 6-False<br>13-False | A1, C1 |
+* The Conditional Branches are Labeled in the corresponding control-flow diagrams above (Ex: B1, D2, etc.)
+* For the conditions, I put the node where there’s a condition and what condition was evaluated. For example, (6-True) means that the condition in the if statement at line 6 of the code provided above was executed as true.
+* Some conditions have multiple T/F, for example (45-True,True,True). What this means is that in line 45 there were three conditions and all of these conditions were true for a specific test
+
+To see the complete table, please view pages 6 to 11 on in the following pdf document: [assignment2_problem1.pdf](assignment2_problem1.pdf)
 
 ### Question 1.3
 #### Provide an Implementation of your test suite using ExUnit
@@ -76,9 +75,9 @@ The following screenshot shows that all the tests have passed for the Grades.Cal
 ### Question 1.4:  
 #### What is the degree of statement coverage obtained? If you weren’t able to achieve 100% coverage explain why. Please be sure to attach screenshots of your coverage results. Elixir’s coverage tool is primitive, as it only provides statement level accuracy. mix test --cover How might you address the limitations of a testing tool that only provides statement level coverage?
 
-The degree of statement coverage that I obtained was 100% as I was able to cover all the statements in the three methods. I was able to achieve that since that I was aiming to achieve a 100% percent branch coverage which implies a 100% statement coverage.
+The degree of statement coverage that we obtained was 100% as we were able to cover all the statements in the three methods. We were able to achieve that since we were aiming to achieve a 100% percent branch coverage which implies a 100% statement coverage.
 
-To address the limitation of a tool that gives you only statement coverage, you really need to analyze the relationship between the type of coverage you want to achieve and the statement coverage that was given by the testing tool. For example, I designed my tests to achieve a 100% branch coverage, so I would expect the result of the statement coverage to be 100%. If that is not the case, then I know that I didn’t achieve a 100% branch coverage, so you essentially get hints from the statement coverage tool and you use it to relate to the type of coverage you got.
+To address the limitation of a tool that gives you only statement coverage, you really need to analyze the relationship between the type of coverage you want to achieve and the statement coverage that was given by the testing tool. For example, we designed our tests to achieve a 100% branch coverage, so we would expect the result of the statement coverage to be 100%. If that is not the case, then we know that we didn’t achieve a 100% branch coverage, so you essentially get hints from the statement coverage tool and you use it to relate to the type of coverage you got.
 
 Screenshots for coverages:
 
