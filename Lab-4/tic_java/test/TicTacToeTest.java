@@ -74,6 +74,6 @@ public class TicTacToeTest {
         board.playNext(0, 2);
         board.playNext(1, 1);
         boolean n = board.checkDiag3x3("X");
-        assertEquals(n, false);
+        assertEquals(n, true);
     }
 }
