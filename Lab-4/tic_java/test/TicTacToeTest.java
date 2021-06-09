@@ -31,7 +31,6 @@ public class TicTacToeTest {
         // testing who plays next
         TicTacToe board = new TicTacToe(3,3);
         board.playNext(1,1);
-        
         assertEquals(board.whoPlaysNext(), "O");
     }
 
@@ -42,5 +41,30 @@ public class TicTacToeTest {
         board.playNext(1,1);
         board.reset();
         assertEquals(board.getValue(1,1), null);
+    }
+
+    @Test
+    public void toString_tc6(){
+
+    }
+
+    @Test
+    public void checkRow_tc7(){
+
+    }
+
+    @Test
+    public void checkCol_tc8(){
+
+    }
+
+    @Test
+    public void checkDiag_tc9(){
+
+    }
+
+    @Test
+    public void winnerWinnerChickenDinner_tc10(){
+
     }
 }
