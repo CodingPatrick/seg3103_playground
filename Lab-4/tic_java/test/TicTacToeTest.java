@@ -53,4 +53,15 @@ public class TicTacToeTest {
         boolean n = board.checkRow(0, "X");
         assertEquals(n, false);
     }
+
+    @Test
+    public void checkCol_tc7(){
+        TicTacToe board = new TicTacToe(4,4);
+        board.playNext(0, 0);
+        board.playNext(1, 0);
+        board.playNext(2, 0);
+        board.playNext(3, 0);
+        boolean n = board.checkRow(0, "X");
+        assertEquals(n, true);
+    }
 }

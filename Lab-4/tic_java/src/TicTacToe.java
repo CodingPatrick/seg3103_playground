@@ -62,6 +62,16 @@ public class TicTacToe {
         return rowChecked == this.col;
     }
 
+    public boolean checkCol(int col, String XO){
+        counter = 0;
+        for (int i = 0; i < this.row; i++){
+          if (board [i][col] == XO){
+              counter ++;
+          }
+        }
+        return counter == this.row;
+    }
+
     public int counter(int line, String XO, int boundary){
         counter = 0;
         for (int i = 0; i < boundary; i++) {
@@ -73,10 +83,6 @@ public class TicTacToe {
     }
 
     /*
-     * public void checkCol() {
-     * 
-     * }
-     * 
      * public void checkDiag() {
      * 
      * }
