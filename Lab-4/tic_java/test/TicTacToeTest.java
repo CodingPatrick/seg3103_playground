@@ -44,14 +44,14 @@ public class TicTacToeTest {
     }
 
     @Test
-    public void checkRow_tc7(){
+    public void checkRow_tc6(){
         TicTacToe board = new TicTacToe(4,4);
         board.playNext(0, 0);
         board.playNext(0, 1);
         board.playNext(0, 2);
         board.playNext(0, 3);
         boolean n = board.checkRow(0, "X");
-        assertEquals(n, true);
+        assertEquals(n, false);
     }
 
 /*
