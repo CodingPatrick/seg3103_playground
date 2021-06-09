@@ -62,6 +62,6 @@ public class TicTacToeTest {
         board.playNext(2, 0);
         board.playNext(3, 0);
         boolean n = board.checkRow(0, "X");
-        assertEquals(n, true);
+        assertEquals(n, false);
     }
 }
