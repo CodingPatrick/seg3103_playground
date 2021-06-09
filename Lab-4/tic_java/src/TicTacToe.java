@@ -68,13 +68,24 @@ public class TicTacToe {
         return colChecked == this.row;
     }
 
+    // for a 3x3 board only
+    public boolean checkDiag3x3(String X0) {
+        if (board[0][0] == board[1][1] && board[1][1] == board[2][2]) {
+            return true;
+        }
+        if (board[2][0] == board[1][1] && board[1][1] == board[0][2]) {
+            return true;
+        }
+        return false;
+    }
+
     public int counter(int line, String XO, int boundary) {
         counter = 0;
         for (int i = 0; i < boundary; i++) {
-            if (board[line][i] == XO && boundary == this.col){
+            if (board[line][i] == XO && boundary == this.col) {
                 counter++;
             }
-            if (board[i][line] == XO && boundary == this.row){
+            if (board[i][line] == XO && boundary == this.row) {
                 counter++;
             }
         }

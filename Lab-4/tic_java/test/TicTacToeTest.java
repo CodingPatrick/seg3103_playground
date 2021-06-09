@@ -64,4 +64,16 @@ public class TicTacToeTest {
         boolean n = board.checkRow(0, "X");
         assertEquals(n, false);
     }
+
+    @Test
+    public void checkDiag3x3_tc8(){
+        TicTacToe board = new TicTacToe(3,3);
+        board.playNext(2, 2);
+        board.playNext(2, 1);
+        board.playNext(0, 0);
+        board.playNext(0, 2);
+        board.playNext(1, 1);
+        boolean n = board.checkDiag3x3("X");
+        assertEquals(n, false);
+    }
 }
