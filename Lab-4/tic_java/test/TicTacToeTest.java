@@ -44,6 +44,18 @@ public class TicTacToeTest {
     }
 
     @Test
+    public void checkRow_tc7(){
+        TicTacToe board = new TicTacToe(4,4);
+        board.playNext(0, 0);
+        board.playNext(0, 1);
+        board.playNext(0, 2);
+        board.playNext(0, 3);
+        boolean n = board.checkRow(0, "X");
+        assertEquals(n, true);
+    }
+
+/*
+    @Test
     public void toString_tc6(){
 
     }
@@ -67,4 +79,5 @@ public class TicTacToeTest {
     public void winnerWinnerChickenDinner_tc10(){
 
     }
+*/
 }

@@ -13,11 +13,14 @@ public class TicTacToe {
     }
 
     private void checkBoundary(int row, int col, boolean initial) {
-        if (row <= 0 || col <= 0) {
+        if ((row <= 0 || col <= 0) && initial == true) {
             throw new IllegalArgumentException("Row and Cols must be greater than 0");
         }
         if (!initial && (row >= this.row || col >= this.col)) {
             throw new IllegalArgumentException("Row and Cols inputs must be less than the board col and row");
+        }
+        if ((row < 0 || col < 0) && initial == false) {
+            throw new IllegalArgumentException("The input or specific field played must be greater than 0.");
         }
     }
 
@@ -53,14 +56,16 @@ public class TicTacToe {
         return board[row][col];
     }
 
-    public String toString() {
-        return "not implemented";
+    public boolean checkRow(int row, String XO){
+        counter = 0;
+        for (int i = 0; i < this.col; i++){
+          if (board [row][i] == XO){
+              counter ++;
+          }
+        }
+        return counter == this.col;
     }
-
-    public void checkRow() {
-
-    }
-
+/*
     public void checkCol() {
 
     }
@@ -71,5 +76,12 @@ public class TicTacToe {
 
     public void winnerWinnerChickenDinner() {
 
+    }
+
+    */
+
+    // this was used to produce a failed test
+    public String toString() {
+        return "not implemented";
     }
 }
