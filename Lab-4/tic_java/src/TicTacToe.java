@@ -56,29 +56,36 @@ public class TicTacToe {
         return board[row][col];
     }
 
-    public boolean checkRow(int row, String XO){
+    public boolean checkRow(int row, String XO) {
+        int boundary = this.col;
+        int rowChecked = counter(row, XO, boundary);
+        return rowChecked == this.col;
+    }
+
+    public int counter(int line, String XO, int boundary){
         counter = 0;
-        for (int i = 0; i < this.col; i++){
-          if (board [row][i] == XO){
-              counter ++;
-          }
+        for (int i = 0; i < boundary; i++) {
+            if (board[line][i] == XO) {
+                counter++;
+            }
         }
-        return counter == this.col;
-    }
-/*
-    public void checkCol() {
-
+        return counter;
     }
 
-    public void checkDiag() {
-
-    }
-
-    public void winnerWinnerChickenDinner() {
-
-    }
-
-    */
+    /*
+     * public void checkCol() {
+     * 
+     * }
+     * 
+     * public void checkDiag() {
+     * 
+     * }
+     * 
+     * public void winner() {
+     * 
+     * }
+     * 
+     */
 
     // this was used to produce a failed test
     public String toString() {
