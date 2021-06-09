@@ -128,7 +128,9 @@ Screenshot of helper method:
 
 * For the refactoring by the first helper method, see changed made on commit: [2.4 - 1](https://github.com/CodingPatrick/seg3103_playground/commit/0e30a057576bab30cf12fca4f5445d22e475ad1d#diff-e4af7700659190dcf094daede863a09f5533c5e3d74c1eea4679f71c94c394c9)
 * For the refactoring by the second helper method, see changed made on commit: [2.4 - 2](https://github.com/CodingPatrick/seg3103_playground/commit/5f35b7a82c9922f8927e1bddd76eea1150e34943#diff-e4af7700659190dcf094daede863a09f5533c5e3d74c1eea4679f71c94c394c9)
-* After refactoring with the second helper method, we found a better way to refactor the code. See the changes made on commit: [2.4 - 3](https://github.com/CodingPatrick/seg3103_playground/commit/70029cfb93dd8e84d08661af5d5bb9018400473f#diff-e4af7700659190dcf094daede863a09f5533c5e3d74c1eea4679f71c94c394c9)
+* After refactoring with the first method, we thought it's better to generalize that method in terms of the name and parameters passed, See the changes on commit: [2.4 - 3](https://github.com/CodingPatrick/seg3103_playground/commit/5cf35b8baaa2fda4daa2de122d3cb8afea6483de)
+* After refactoring with the second helper method, we found a better way to refactor the code. See the changes made on commit: [2.4 - 4](https://github.com/CodingPatrick/seg3103_playground/commit/70029cfb93dd8e84d08661af5d5bb9018400473f#diff-e4af7700659190dcf094daede863a09f5533c5e3d74c1eea4679f71c94c394c9)
+
 
 Screenshot of helper method:
 
