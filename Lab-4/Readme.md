@@ -25,11 +25,11 @@ Date: Thursday June 10, 2021
 
 #### The Following is a picture to prove that I can compile the elixir application
 
-![image](Assets/Elixer_Compiled.PNG)
+![image](assets/Elixer_Compiled.PNG)
 
 #### The Following is a picture to prove that I can run the tests for the elixir application
 
-![image](Assets/Elixer_tests_compiled.PNG)
+![image](assets/Elixer_tests_compiled.PNG)
 
 ## Commits - Akram El-Gaouny
 
@@ -48,7 +48,7 @@ Please note that at commit 2.2, I had to do a minor change in the code with the 
 ## Running Tic using Elixir - Patrick Loranger
 
 #### The Following is a picture to prove that I can compile and run the elixir application
-![terminal screenshot](Assets/terminal_elixir.png)
+![terminal screenshot](assets/terminal_elixir.png)
 
 ## Commits - Patrick Loranger
 
