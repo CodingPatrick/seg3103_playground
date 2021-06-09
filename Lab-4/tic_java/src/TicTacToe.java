@@ -69,11 +69,16 @@ public class TicTacToe {
     }
 
     // for a 3x3 board only
-    public boolean checkDiag3x3(String X0) {
-        if (board[0][0] == board[1][1] && board[1][1] == board[2][2]) {
+    public boolean checkDiag3x3() {
+        Boolean diagChecked = diagonals(board[0][0], board[1][1], board[2][2], board[0][2], board[2][0]);
+        return diagChecked;
+    }
+
+    public boolean diagonals(String square1, String square2, String square3, String square4, String square5){
+        if (square1 == square2 && square2 == square3) {
             return true;
         }
-        if (board[2][0] == board[1][1] && board[1][1] == board[0][2]) {
+        if (square5 == square2 && square2 == square4) {
             return true;
         }
         return false;
@@ -93,10 +98,6 @@ public class TicTacToe {
     }
 
     /*
-     * public void checkDiag() {
-     * 
-     * }
-     * 
      * public void winner() {
      * 
      * }
