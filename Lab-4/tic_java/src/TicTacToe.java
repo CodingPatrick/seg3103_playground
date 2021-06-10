@@ -107,14 +107,14 @@ public class TicTacToe {
 
     public boolean boardIsFull3x3(int row, int col, String XO){
         counter = 0;
-        for (int i = 0; i < row; i++){
-            for (int j = 0; j < col; i++){
+        for (int i = 0; i < 3; i++){
+            for (int j = 0; j < 3; j++){
                 if((board[i][j] == "X" || board[i][j] == "O")){
                     counter++;
                 }
             }
         }
-        if (counter == row*col && ! hasWinner3x3(row, col, XO)){
+        if (counter == 9 && ! hasWinner3x3(row, col, XO)){
             return true;
         }
         return false;
