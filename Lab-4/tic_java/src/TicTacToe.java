@@ -105,6 +105,21 @@ public class TicTacToe {
         return false;
     }
 
+    public boolean boardIsFull3x3(int row, int col, String XO){
+        counter = 0;
+        for (int i = 0; i < row; i++){
+            for (int j = 0; j < col; i++){
+                if((board[i][j] == "X" || board[i][j] == "O")){
+                    counter++;
+                }
+            }
+        }
+        if (counter == row*col && ! hasWinner3x3(row, col, XO)){
+            return true;
+        }
+        return false;
+    }
+
     // this was used to produce a failed test
     public String toString() {
         return "not implemented";

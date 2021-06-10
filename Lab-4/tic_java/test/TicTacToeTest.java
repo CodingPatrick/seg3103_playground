@@ -90,4 +90,20 @@ public class TicTacToeTest {
         boolean n = board.hasWinner3x3(0, 0, "X");
         assertEquals(n, true);
     }
+
+    @Test
+    public void boardIsFull3x3_tc10(){
+        TicTacToe board = new TicTacToe(3,3);
+        board.playNext(0, 0);
+        board.playNext(0, 1);
+        board.playNext(0, 2);
+        board.playNext(1, 0);
+        board.playNext(1, 2);
+        board.playNext(1, 1);
+        board.playNext(2, 0);
+        board.playNext(2, 1);
+        board.playNext(2, 2);
+        boolean n = board.boardIsFull3x3(0, 0, "X");
+        assertEquals(n, false);
+    }
 }
