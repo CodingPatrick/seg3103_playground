@@ -57,8 +57,16 @@ The table below contains links to all the commit I made. I tried to put picture 
 
 | Commit Number | Implementation and Failing Test | Passing Test | Refactor|
 | --------------| --------------------------------| -------------| --------|
-| 1 | [1.1]() | [1.2]() | [1.3]() | 
-| 2 | [2.1]() | [2.2]() | [2.3]() | 
-| 3 | [3.1]() | [3.2]() | [3.3]() | 
-| 4 | [4.1]() | [4.2]() | [4.3]() | 
-| 5 | [5.1]() | [5.2]() | [5.3]() | 
+| 1 | [1.1](https://github.com/CodingPatrick/seg3103_playground/commit/19e91e9fc99a13fc9ed41531a3bddef7f7e19535#diff-f25b0949c7a55ec53dfd929ed9675660921694b4f51711abf503ed73b98cc5f3) | [1.2](https://github.com/CodingPatrick/seg3103_playground/commit/cd8255c18d260a1f5abe46233b816210b68cd8af#diff-f25b0949c7a55ec53dfd929ed9675660921694b4f51711abf503ed73b98cc5f3) | [1.3](https://github.com/CodingPatrick/seg3103_playground/commit/6538dde02e79b9934946a7a667e0086c2a137f2e#diff-f25b0949c7a55ec53dfd929ed9675660921694b4f51711abf503ed73b98cc5f3) | 
+| 2 | [2.1](https://github.com/CodingPatrick/seg3103_playground/commit/388e11d7d5020be56c8d5036f46275678936f2b6#diff-f25b0949c7a55ec53dfd929ed9675660921694b4f51711abf503ed73b98cc5f3) | [2.2](https://github.com/CodingPatrick/seg3103_playground/commit/7193a9f91a382ea74a6a00adda1f7c7304de2135#diff-f25b0949c7a55ec53dfd929ed9675660921694b4f51711abf503ed73b98cc5f3) | [2.3](https://github.com/CodingPatrick/seg3103_playground/commit/f9abe951728744dd274c80b5ae7356087da87995#diff-f25b0949c7a55ec53dfd929ed9675660921694b4f51711abf503ed73b98cc5f3) | 
+| 3 | [3.1](https://github.com/CodingPatrick/seg3103_playground/commit/2bc0db02d1af1cf69d650b267ac43c549e3e0473#diff-f25b0949c7a55ec53dfd929ed9675660921694b4f51711abf503ed73b98cc5f3) | [3.2](https://github.com/CodingPatrick/seg3103_playground/commit/e31d0d303c03af2fc73c424e76285d47b4385d76#diff-f25b0949c7a55ec53dfd929ed9675660921694b4f51711abf503ed73b98cc5f3) | [3.3](https://github.com/CodingPatrick/seg3103_playground/commit/60f13269e97efbcbf6934bf4b6d5d920fdeca8c1#diff-f25b0949c7a55ec53dfd929ed9675660921694b4f51711abf503ed73b98cc5f3) | 
+| 4 | [4.1](https://github.com/CodingPatrick/seg3103_playground/commit/fe2ac17886b0cc9f28a349af1ef8756437ff8718#diff-f25b0949c7a55ec53dfd929ed9675660921694b4f51711abf503ed73b98cc5f3) | [4.2](https://github.com/CodingPatrick/seg3103_playground/commit/9feb5e8b9a14daddded82b30f03057424ea5a441#diff-f25b0949c7a55ec53dfd929ed9675660921694b4f51711abf503ed73b98cc5f3) | [4.3](https://github.com/CodingPatrick/seg3103_playground/commit/a0f7e7e79fdb88a50f53475864fd23b966462f6d#diff-f25b0949c7a55ec53dfd929ed9675660921694b4f51711abf503ed73b98cc5f3) | 
+| 5 | [5.1](https://github.com/CodingPatrick/seg3103_playground/commit/17f0b1813e8923c74380b88bb687daf0fc1b4249#diff-f25b0949c7a55ec53dfd929ed9675660921694b4f51711abf503ed73b98cc5f3) | [5.2](https://github.com/CodingPatrick/seg3103_playground/commit/d0b729724e55d58dba91b7e732466cee13eb7588#diff-f25b0949c7a55ec53dfd929ed9675660921694b4f51711abf503ed73b98cc5f3) | [5.3](https://github.com/CodingPatrick/seg3103_playground/commit/e9770422aad2627e831e375c9dcf53587f5e7b30#diff-f25b0949c7a55ec53dfd929ed9675660921694b4f51711abf503ed73b98cc5f3) | 
+
+Please note that for commit 5.1 and 5.2, I had to do them twice. I realized my test was only passing because the code was broken (it was always true). The ones showed in the table are the correct commits.
+
+## Final Testing
+
+Here is proof that all of our tests pass for tic_java:
+
+![passing tests](assets/passing_test.png)
