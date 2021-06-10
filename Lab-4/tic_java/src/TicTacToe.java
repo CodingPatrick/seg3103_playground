@@ -4,6 +4,7 @@ public class TicTacToe {
     private int row = -1;
     private int col = -1;
     private int counter = 0;
+    private int counter2 = 0;
 
     public TicTacToe(int row, int col) {
         checkBoundary(row, col, true);
@@ -74,7 +75,7 @@ public class TicTacToe {
         return diagChecked;
     }
 
-    public boolean diagonals(String square1, String square2, String square3, String square4, String square5){
+    public boolean diagonals(String square1, String square2, String square3, String square4, String square5) {
         if (square1 == square2 && square2 == square3) {
             return true;
         }
@@ -97,12 +98,34 @@ public class TicTacToe {
         return counter;
     }
 
-    /*
-     * public void winner() {
-     * 
-     * }
-     * 
-     */
+    // for a 3x3 board only
+    public boolean hasWinner3x3(int row, int col, String XO){
+        counter = 0;
+        for (int i = 0; i < this.col; i++){
+            if (board [row][i] == XO){
+                counter ++;
+            }
+        }
+        counter2 = 0;
+        for (int i = 0; i < this.row; i++){
+          if (board [i][col] == XO){
+              counter2 ++;
+          }
+        }
+        if (board[0][0] == board[1][1] && board[1][1] == board[2][2]) {
+            return true;
+        }
+        if (board[2][0] == board[1][1] && board[1][1] == board[0][2]) {
+            return true;
+        }
+        if (counter == this.col) {
+            return true;
+        }
+        if (counter2 == this.row){
+            return true;
+        }
+        return false;
+    }
 
     // this was used to produce a failed test
     public String toString() {
