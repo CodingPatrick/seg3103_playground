@@ -105,7 +105,8 @@ public class TicTacToe {
         return false;
     }
 
-    public boolean boardIsFull3x3(int row, int col, String XO){
+    // for a 3x3 board only
+    public int filledSpots(){
         counter = 0;
         for (int i = 0; i < 3; i++){
             for (int j = 0; j < 3; j++){
@@ -114,7 +115,13 @@ public class TicTacToe {
                 }
             }
         }
-        if (counter == 9 && ! hasWinner3x3(row, col, XO)){
+        return counter;
+    }
+
+    // for a 3x3 board only
+    public boolean boardIsFull3x3(int row, int col, String XO){
+        int isFull = filledSpots();
+        if (isFull == 9 && ! hasWinner3x3(row, col, XO)){
             return true;
         }
         return false;
