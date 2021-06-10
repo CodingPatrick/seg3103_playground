@@ -88,6 +88,6 @@ public class TicTacToeTest {
         board.playNext(2, 1);
         board.playNext(2, 2);
         boolean n = board.hasWinner3x3(0, 0, "X");
-        assertEquals(n, false);
+        assertEquals(n, true);
     }
 }
