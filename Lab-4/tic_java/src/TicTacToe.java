@@ -4,7 +4,6 @@ public class TicTacToe {
     private int row = -1;
     private int col = -1;
     private int counter = 0;
-    private int counter2 = 0;
 
     public TicTacToe(int row, int col) {
         checkBoundary(row, col, true);
@@ -100,28 +99,7 @@ public class TicTacToe {
 
     // for a 3x3 board only
     public boolean hasWinner3x3(int row, int col, String XO){
-        counter = 0;
-        for (int i = 0; i < this.col; i++){
-            if (board [row][i] == XO){
-                counter ++;
-            }
-        }
-        counter2 = 0;
-        for (int i = 0; i < this.row; i++){
-          if (board [i][col] == XO){
-              counter2 ++;
-          }
-        }
-        if (board[0][0] == board[1][1] && board[1][1] == board[2][2]) {
-            return true;
-        }
-        if (board[2][0] == board[1][1] && board[1][1] == board[0][2]) {
-            return true;
-        }
-        if (counter == this.col) {
-            return true;
-        }
-        if (counter2 == this.row){
+        if (checkRow(row, XO) == true || checkCol(col, XO) == true || checkDiag3x3() == true){
             return true;
         }
         return false;
