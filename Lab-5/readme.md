@@ -17,3 +17,5 @@ Now, after stubbing we know that if there's a faliure in the application, it won
 Since that we have tested the interface between the UI and the Grades.Calculator module, we can be sure that when we implement the actual logic in the Grades.Calculator module it won't fail due to an issue of communication (interface) between the UI and the module.
 
 ### Implementing The Actual Logic:
+
+After implementing the actual logic from the A2 calculator module (As seen in this commit). The button and the logic don't work and I believe the reason it does not work is because of the addition operations. The interface (UI) calls the calculator functions with STRING parameters as opposed to int parameters therefore the A2 impleemntation is not compatiable with the web application.
