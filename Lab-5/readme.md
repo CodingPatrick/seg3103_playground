@@ -18,6 +18,6 @@ Since that we have tested the interface between the UI and the Grades.Calculator
 
 ### Implementing The Actual Logic:
 
-After implementing the actual logic from the A2 calculator module (As seen in this [commit](https://github.com/CodingPatrick/seg3103_playground/commit/66b560641375ab2db26701367a406c6014def3cd#diff-78d95c3f77e18667fedda5dfaad6f2fd7c0ee89048b3552bdeb43c7419f459a7)). The button and the logic don't work and I believe the reason it does not work is because of the addition operations. The interface (UI) calls the calculator functions with STRING parameters as opposed to int parameters therefore the A2 impleemntation is not compatiable with the web application.
+After implementing the actual logic from the A2 calculator module (As seen in this [commit](https://github.com/CodingPatrick/seg3103_playground/commit/66b560641375ab2db26701367a406c6014def3cd#diff-78d95c3f77e18667fedda5dfaad6f2fd7c0ee89048b3552bdeb43c7419f459a7)). The button and the logic don't work and I believe the reason it does not work is because of the addition operations. The interface (UI) calls the calculator functions with STRING parameters as opposed to int parameters therefore the A2 impleemntation is not compatiable with the web application. The error below is what I got when I implemented the logic of A2.
 
 ![image](https://user-images.githubusercontent.com/64698780/123523896-e4610700-d694-11eb-8671-ef4b9fe351d4.png)
