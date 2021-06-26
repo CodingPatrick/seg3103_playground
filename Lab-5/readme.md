@@ -15,3 +15,5 @@ Here's the effect of the stubs on the interface
 Now, after stubbing we know that if there's a faliure in the application, it won't be from the web application but rather from another module. 
 
 Since that we have tested the interface between the UI and the Grades.Calculator module, we can be sure that when we implement the actual logic in the Grades.Calculator module it won't fail due to an issue of communication (interface) between the UI and the module.
+
+### Implementing The Actual Logic:
