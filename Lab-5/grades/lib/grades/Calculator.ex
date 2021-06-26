@@ -1,19 +1,3 @@
-  # defmodule Grades.Calculator do
-
-  #   def percentage_grade(%{final: final, homework: homework, labs: labs, midterm: midterm}) do
-  #     "90%"
-  #   end
-
-  #   def letter_grade(%{final: final, homework: homework, labs: labs, midterm: midterm}) do
-  #     "A+"
-  #   end
-
-  #   def numeric_grade() do
-  #     90
-  #   end
-    
-  # end
-
 defmodule Grades.Calculator do
 
   # Helper method for Question 2.1
