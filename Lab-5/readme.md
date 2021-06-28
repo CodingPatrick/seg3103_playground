@@ -1,3 +1,21 @@
+# Lab 05 - SEG 3103 Playground
+
+### Team
+
+Name: Patrick Loranger, plora079@uottawa.ca<br>
+Student Number: 300112374<br>
+
+Name: Akram El-Gaouny, aelga098@uottawa.ca<br>
+Student Number: 300109692
+
+### Professor and Teaching Assistant
+
+Professor: Andrew Forward, aforward@uottawa.ca<br>
+TA: Henry Chen, zchen229@uottawa.ca<br>
+
+Course: SEG 3103<br>
+Date: Friday July 2, 2021
+
 ## Part 1: Stubbing Grades.Calculator
 
 ### Before Stubbing:
@@ -21,3 +39,32 @@ Since that we have tested the interface between the UI and the Grades.Calculator
 After implementing the actual logic from the A2 calculator module (As seen in this [commit](https://github.com/CodingPatrick/seg3103_playground/commit/66b560641375ab2db26701367a406c6014def3cd#diff-78d95c3f77e18667fedda5dfaad6f2fd7c0ee89048b3552bdeb43c7419f459a7)). The button and the logic don't work and I believe the reason it does not work is because of the addition operations. The interface (UI) calls the calculator functions with STRING parameters as opposed to int parameters therefore the A2 impleemntation is not compatiable with the web application. The error below is what I got when I implemented the logic of A2.
 
 ![image](https://user-images.githubusercontent.com/64698780/123523896-e4610700-d694-11eb-8671-ef4b9fe351d4.png)
+
+## Part 2: Mocks and Twitter
+
+First, once I opened the Twitter, I made sure everything worked according to plan. 
+
+I ran the command lines to compile the code: 
+```bash
+javac -encoding UTF-8 --source-path src -d dist src/*.java
+```
+```bash
+javac -encoding UTF-8 --source-path test -d dist -cp dist:lib/easymock-4.3.jar:lib/junit-platform-console-standalone-1.7.1.jar test/*.java
+```
+
+Then, once the code was properly compile, I ran:
+```bash
+./bin/test
+```
+When I ran this command line, I got the following output:
+![first run of the mocks](assets/mocks_before.png)
+
+Then, I implemented all the new Mocks in TwitterTest.java: See commit
+
+When I ran ./bin/test again, this was the results:
+![second run of the mocks](assets/mocks_implementation.png)
+
+I realized that I need to fix the isMentionned(String name) function in Twitter.java: See commit
+
+Once everything was completed, I ran ./bin/test one last time and everything works.
+![final run of the mocks](assets/mocks_final.png)
