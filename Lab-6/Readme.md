@@ -51,3 +51,12 @@ The command will download a number of files, here's a proof that I ran this comm
 
 #### Admin Page
 ![image](https://user-images.githubusercontent.com/64698780/124803088-a9799180-df26-11eb-8cb1-88c329febda4.png)
+
+### Running The Tests
+The following command was run to execute the default tests
+``` code 
+mvn test
+```
+
+![image](https://user-images.githubusercontent.com/64698780/124804009-cebacf80-df27-11eb-93b5-88701723b383.png)
+
