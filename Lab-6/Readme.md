@@ -21,10 +21,9 @@ Date: Thursday June 10, 2021
 
 ### Compiling Maven
 
+After installing maven run the following command
 ``` code 
-// After installing maven run the following command
 mvn compile
-
 ```
 
 Here is a screenshot of the successful compiling using maven
