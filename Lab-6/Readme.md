@@ -44,3 +44,10 @@ The command will download a number of files, here's a proof that I ran this comm
 ![image](https://user-images.githubusercontent.com/64698780/124796271-f9545a80-df1e-11eb-9b70-aa92d38d2e4d.png)
 
 
+### Running The Server and Viewing The App
+
+#### Homepage
+![image](https://user-images.githubusercontent.com/64698780/124803013-94046780-df26-11eb-9cdb-a65969396ab8.png)
+
+#### Admin Page
+![image](https://user-images.githubusercontent.com/64698780/124803088-a9799180-df26-11eb-8cb1-88c329febda4.png)
