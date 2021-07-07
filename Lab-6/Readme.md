@@ -19,11 +19,11 @@ Date: Thursday June 10, 2021
 
 
 
-#### Compiling Maven
+### Compiling Maven
 
 ``` code 
 // After installing maven run the following command
-mvn complile
+mvn compile
 
 ```
 
