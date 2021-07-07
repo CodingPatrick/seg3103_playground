@@ -28,3 +28,19 @@ mvn compile
 
 Here is a screenshot of the successful compiling using maven
 ![image](https://user-images.githubusercontent.com/64698780/124795224-d1182c00-df1d-11eb-90db-910bb3e16ee8.png)
+
+
+### Packaging the bookstoreApp
+
+After comiling maven run the follwoing command
+``` code 
+mvn package -DskipTests
+```
+
+The command will download a number of files, here's a proof that I ran this command (beginning and end of the run).
+#### Beginning of the run
+![image](https://user-images.githubusercontent.com/64698780/124796160-d88c0500-df1e-11eb-977d-48a0d7c45004.png)
+### End of the run
+![image](https://user-images.githubusercontent.com/64698780/124796271-f9545a80-df1e-11eb-9b70-aa92d38d2e4d.png)
+
+
