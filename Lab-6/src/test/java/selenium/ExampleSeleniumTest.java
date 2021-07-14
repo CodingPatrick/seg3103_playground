@@ -25,6 +25,7 @@ class ExampleSeleniumTest {
   public static void setUpBeforeClass() throws Exception {
     ProcessBuilder pb = new ProcessBuilder("java", "-jar", "bookstore5.jar");
     server = pb.start();
+    Thread.sleep(10000);
   }
 
   @BeforeEach
@@ -34,8 +35,8 @@ class ExampleSeleniumTest {
     // driver = new SafariDriver();
     WebDriverManager.chromedriver().setup();
     driver = new ChromeDriver();
-
     driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
     driver.get("http://localhost:8080/");
     // wait to make sure Selenium is done loading the page
     WebDriverWait wait = new WebDriverWait(driver, 60);
@@ -79,4 +80,34 @@ class ExampleSeleniumTest {
   private String[] getWords(String s) {
     return s.split("\\s+");
   }
+
+  // NEW SELENIUM TEST FOR LAB 6 (ALSO WORKS FOR ASSIGNMENT 3)
+  @Test
+  public void F1PositiveTest() {
+    // Ensuring that I login before doing any admin actions
+    driver.get("http://localhost:8080/login");
+    WebElement userName = driver.findElement(By.id("loginId"));
+    WebElement password = driver.findElement(By.id("loginPasswd"));
+    userName.sendKeys("admin");
+    password.sendKeys("password");
+    driver.findElement(By.id("loginBtn")).click();
+    // Filling out the form
+    driver.get("http://localhost:8080/admin");
+    driver.findElement(By.id("addBook-category")).sendKeys("Fiction");
+    driver.findElement(By.id("addBook-id")).sendKeys("h11023");
+    driver.findElement(By.id("addBook-title")).sendKeys("Of Mice and Men");
+    driver.findElement(By.id("addBook-authors")).sendKeys("John Steinbeck");
+    driver.findElement(By.id("longDescription")).sendKeys("The book talks about two ranch workers during the great depression");
+    driver.findElement(By.id("cost")).sendKeys("20.00");
+    // submitting the form
+    driver.findElement(By.name("addBook")).click();
+    // ensuring that there is a feedback messages
+    String feedbackMessage = driver.findElement(By.cssSelector("#feedback h2")).getText();
+    assertEquals("Successfully added book", feedbackMessage);
+    // ensuring that the books has actually been added
+    driver.findElement(By.id("searchBtn")).click();
+    String title = driver.findElement(By.id("title-h11023")).getText();
+    assertEquals("Of Mice and Men", title);
+  }
 }
+
