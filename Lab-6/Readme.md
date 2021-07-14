@@ -28,14 +28,14 @@ First I run this command line:
 mvn --version
 ```
 And I get this output:
-![mvn version output](assets/MVN_version.png)
+![mvn version output](Assets/MVN_version.png)
 
 After installing maven run the following command
 ``` code 
 mvn compile
 ```
 Here is a screenshot of the successful compiling using maven:
-![mvn compile](assets/MVN_compile.png)
+![mvn compile](Assets/MVN_compile.png)
 
 ### Packaging the bookstoreApp
 
@@ -46,9 +46,9 @@ mvn package -DskipTests
 
 The command will download a number of files, here's a proof that we ran this command (beginning and end of the run).
 #### Beginning of the run
-![mvn skip 1](assets/MVN_skip1.png)
+![mvn skip 1](Assets/MVN_skip1.png)
 ### End of the run
-![mvn skip 2](assets/MVN_skip2.png)
+![mvn skip 2](Assets/MVN_skip2.png)
 
 ### Running The Server and Viewing The App
 
@@ -57,24 +57,24 @@ Once everything is downloaded and ready, I run this command line to open the loc
 java -jar ./target/BookstoreApp-0.1.0.jar
 ```
 #### Homepage
-![homepage](assets/localhost1.png)
+![homepage](Assets/localhost1.png)
 
 #### Admin Login
-![admin login](assets/localhost2.png)
+![admin login](Assets/localhost2.png)
 
 #### Admin Page
-![admin page](assets/localhost3.png)
+![admin page](Assets/localhost3.png)
 
 ### Running The Tests
 The following command was run to execute the default tests
 ``` code 
 mvn test
 ```
-![tests before](assets/MVN_test_before.png)
+![tests before](Assets/MVN_test_before.png)
 
 After initially running the tests, I added a new selenium test to the code:
-![selenium test](assets/SeleniumTest.png)
+![selenium test](Assets/SeleniumTest.png)
 
 Finally, I ran the testing command line one more time to see if my new test passes:
-![tests before](assets/MVN_test_after.png)
+![tests before](Assets/MVN_test_after.png)
 It passed and it works.
