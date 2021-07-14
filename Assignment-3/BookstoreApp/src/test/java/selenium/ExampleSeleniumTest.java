@@ -383,43 +383,45 @@ class ExampleSeleniumTest {
     assertEquals("$0.00", totalCost);
   }
 
-  // // does not throw an exception
-  // @Test
+  
+  @Test
 
-  // public void F7PositiveTest() {
+  public void F7PositiveTest() {
 
-  //   // Ensuring that I login before doing any admin actions
-  //   driver.get("http://localhost:8080/login");
-  //   WebElement userName = driver.findElement(By.id("loginId"));
-  //   WebElement password = driver.findElement(By.id("loginPasswd"));
-  //   userName.sendKeys("admin");
-  //   password.sendKeys("password");
-  //   driver.findElement(By.id("loginBtn")).click();
+    // Ensuring that I login before doing any admin actions
+    driver.get("http://localhost:8080/login");
+    WebElement userName = driver.findElement(By.id("loginId"));
+    WebElement password = driver.findElement(By.id("loginPasswd"));
+    userName.sendKeys("admin");
+    password.sendKeys("password");
+    driver.findElement(By.id("loginBtn")).click();
 
-  //   // adding a book to remove, this is done to ensure that tests are isolated
-  //   driver.get("http://localhost:8080/admin");
-  //   driver.findElement(By.id("addBook-category")).sendKeys("Fiction");
-  //   driver.findElement(By.id("addBook-id")).sendKeys("removeMe");
-  //   driver.findElement(By.id("addBook-title")).sendKeys("Of Mice and Men volume (4)");
-  //   driver.findElement(By.id("addBook-authors")).sendKeys("John Steinbeck");
-  //   driver.findElement(By.id("longDescription")).sendKeys("The book talks about two ranch workers during the great depression");
-  //   driver.findElement(By.id("cost")).sendKeys("25.00");
+    // adding a book to remove, this is done to ensure that tests are isolated
+    driver.get("http://localhost:8080/admin");
+    driver.findElement(By.id("addBook-category")).sendKeys("Fiction");
+    driver.findElement(By.id("addBook-id")).sendKeys("removeMe");
+    driver.findElement(By.id("addBook-title")).sendKeys("Of Mice and Men volume (4)");
+    driver.findElement(By.id("addBook-authors")).sendKeys("John Steinbeck");
+    driver.findElement(By.id("longDescription")).sendKeys("The book talks about two ranch workers during the great depression");
+    driver.findElement(By.id("cost")).sendKeys("25.00");
+    // submitting the form
+    driver.findElement(By.name("addBook")).click();
+    // get a list of all books
+    driver.findElement(By.id("searchBtn")).click();
+    // delete the book with id removeMe
+    driver.findElement(By.cssSelector("#del-removeMe")).click();
 
-  //   // get a list of all books
-  //   driver.findElement(By.id("searchBtn")).click();
-  //   // delete the book with id removeMe
-  //   driver.findElement(By.cssSelector("#del-removeMe")).click();
+    driver.navigate().refresh();
+    // ensuring that the book has been removed from the books list
+    assertThrows(org.openqa.selenium.NoSuchElementException.class, () -> {
+      driver.findElement(By.id("title-removeMe"));
+    });
 
-  //   // ensuring that the book has been removed from the books list
-  //   assertThrows(org.openqa.selenium.NoSuchElementException.class, () -> {
-  //     driver.findElement(By.id("title-removeMe"));
-  //   });
-
-  //   driver.get("http://localhost:8080/admin");
-  //   driver.findElement(By.cssSelector("body > div > div.menu > form:nth-child(3) > input[type=submit]")).click();
+    driver.get("http://localhost:8080/admin");
+    driver.findElement(By.cssSelector("body > div > div.menu > form:nth-child(3) > input[type=submit]")).click();
 
 
-  // }
+  }
 
   @Test
  
@@ -460,25 +462,29 @@ class ExampleSeleniumTest {
     driver.findElement(By.cssSelector("body > div > div.menu > form:nth-child(3) > input[type=submit]")).click();
   }
 
-  // // gives an error
-  // @Test
+  
+  @Test
 
-  // public void F8PositiveTest() {
+  public void F8PositiveTest() {
 
-  //   driver.get("http://localhost:8080/login");
-  //   WebElement userName = driver.findElement(By.id("loginId"));
-  //   WebElement password = driver.findElement(By.id("loginPasswd"));
-  //   userName.sendKeys("admin");
-  //   password.sendKeys("password");
-  //   driver.findElement(By.id("loginBtn")).click();
+    driver.get("http://localhost:8080/login");
+    WebElement userName = driver.findElement(By.id("loginId"));
+    WebElement password = driver.findElement(By.id("loginPasswd"));
+    userName.sendKeys("admin");
+    password.sendKeys("password");
+    driver.findElement(By.id("loginBtn")).click();
 
-  //   String delete = driver.findElement(By.cssSelector("#title-rowling001")).getText();
-  //   assertEquals("The Harry Potter Series", delete);
+    driver.get("http://localhost:8080/admin");
 
-  //   driver.get("http://localhost:8080/admin");
-  //   driver.findElement(By.cssSelector("body > div > div.menu > form:nth-child(3) > input[type=submit]")).click();
+    driver.findElement(By.id("searchBtn")).click();
 
-  // }
+    String delete = driver.findElement(By.cssSelector("#del-rowling001")).getText();
+    assertEquals("Delete", delete);
+
+    driver.get("http://localhost:8080/admin");
+    driver.findElement(By.cssSelector("body > div > div.menu > form:nth-child(3) > input[type=submit]")).click();
+
+  }
 
   @Test
  
@@ -491,6 +497,10 @@ class ExampleSeleniumTest {
     password.sendKeys("passwordWrong");
     driver.findElement(By.id("loginBtn")).click();
 
+    
+    String error = driver.findElement(By.cssSelector("body > div > div.content > div")).getText();
+
+    assertEquals("Invalid username and/or password", error);
 
     assertThrows(org.openqa.selenium.NoSuchElementException.class, () -> {
       driver.findElement(By.id("del-hall001")).getText();
