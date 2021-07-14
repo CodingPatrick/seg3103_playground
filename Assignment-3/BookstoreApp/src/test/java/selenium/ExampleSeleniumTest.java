@@ -409,7 +409,7 @@ class ExampleSeleniumTest {
     // get a list of all books
     driver.findElement(By.id("searchBtn")).click();
     // delete the book with id removeMe
-    driver.findElement(By.cssSelector("#del-removeMe")).click();
+    driver.findElement(By.id("del-removeMe")).click();
 
     driver.navigate().refresh();
     // ensuring that the book has been removed from the books list
