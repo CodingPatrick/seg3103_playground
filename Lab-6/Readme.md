@@ -53,6 +53,7 @@ Once everything is downloaded and ready, I run this command line to open the loc
 ```code
 java -jar ./target/BookstoreApp-0.1.0.jar
 ```
+![jar compile](Assets/jarcmd.png)
 #### Homepage
 ![homepage](Assets/localhost1.png)
 #### Admin Login
