@@ -66,8 +66,13 @@ The following command was run to execute the default tests
 mvn test
 ```
 ![tests before](Assets/MVN_test_before.png)
+
 After initially running the tests, I added a new selenium test to the code:
+
 ![selenium test](Assets/SeleniumTest.png)
+
 Finally, I ran the testing command line one more time to see if my new test passes:
+
 ![tests before](Assets/MVN_test_after.png)
+
 It passed and it works.
