@@ -1,4 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: ExampleTest
 -------------------------------------------------------------------------------
+<<<<<<< HEAD
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in ExampleTest
+=======
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.07 s - in ExampleTest
+>>>>>>> eb003d869d2bd3a066d1cf39b1651a4a4b094248

@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="selenium.ExampleSeleniumTest" time="185.19" tests="35" errors="0" skipped="0" failures="1">
+=======
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="selenium.ExampleSeleniumTest" time="138.511" tests="18" errors="0" skipped="0" failures="2">
+>>>>>>> eb003d869d2bd3a066d1cf39b1651a4a4b094248
   <properties>
     <property name="java.specification.version" value="16"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -10,10 +14,16 @@
     <property name="os.name" value="Mac OS X"/>
     <property name="java.vm.specification.version" value="16"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
+<<<<<<< HEAD
     <property name="user.country" value="CA"/>
     <property name="sun.boot.library.path" value="/usr/local/Cellar/openjdk/16.0.1/libexec/openjdk.jdk/Contents/Home/lib"/>
     <property name="sun.java.command" value="/Users/patrickloranger/Documents/4. Summer Term 2021/SEG 3103/seg3103_playground/Assignment-3/BookstoreApp/target/surefire/surefirebooter17169267640099121938.jar /Users/patrickloranger/Documents/4. Summer Term 2021/SEG 3103/seg3103_playground/Assignment-3/BookstoreApp/target/surefire 2021-07-15T01-18-29_413-jvmRun1 surefire10682632413293186390tmp surefire_018270072313773042536tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+=======
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Java\java16\bin"/>
+    <property name="sun.java.command" value="C:\Users\jaoun\AppData\Local\Temp\surefire12838250832707928223\surefirebooter3657090608345102285.jar C:\Users\jaoun\AppData\Local\Temp\surefire12838250832707928223 2021-07-14T13-46-26_880-jvmRun1 surefire15186352711395816032tmp surefire_014694650504724719178tmp"/>
+>>>>>>> eb003d869d2bd3a066d1cf39b1651a4a4b094248
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/patrickloranger/Documents/4. Summer Term 2021/SEG 3103/seg3103_playground/Assignment-3/BookstoreApp/target/test-classes:/Users/patrickloranger/Documents/4. Summer Term 2021/SEG 3103/seg3103_playground/Assignment-3/BookstoreApp/target/classes:/Users/patrickloranger/.m2/repository/io/cucumber/cucumber-java/4.2.6/cucumber-java-4.2.6.jar:/Users/patrickloranger/.m2/repository/io/cucumber/cucumber-core/4.2.6/cucumber-core-4.2.6.jar:/Users/patrickloranger/.m2/repository/io/cucumber/cucumber-html/0.2.7/cucumber-html-0.2.7.jar:/Users/patrickloranger/.m2/repository/io/cucumber/gherkin/5.1.0/gherkin-5.1.0.jar:/Users/patrickloranger/.m2/repository/io/cucumber/tag-expressions/1.1.1/tag-expressions-1.1.1.jar:/Users/patrickloranger/.m2/repository/io/cucumber/cucumber-expressions/6.2.0/cucumber-expressions-6.2.0.jar:/Users/patrickloranger/.m2/repository/io/cucumber/datatable/1.1.12/datatable-1.1.12.jar:/Users/patrickloranger/.m2/repository/io/cucumber/datatable-dependencies/1.1.12/datatable-dependencies-1.1.12.jar:/Users/patrickloranger/.m2/repository/io/cucumber/cucumber-junit/4.2.6/cucumber-junit-4.2.6.jar:/Users/patrickloranger/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/patrickloranger/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/patrickloranger/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/Users/patrickloranger/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/Users/patrickloranger/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/Users/patrickloranger/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/Users/patrickloranger/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/Users/patrickloranger/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/Users/patrickloranger/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/Users/patrickloranger/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/Users/patrickloranger/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/Users/patrickloranger/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/Users/patrickloranger/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/patrickloranger/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/patrickloranger/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/Users/patrickloranger/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/patrickloranger/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/patrickloranger/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/patrickloranger/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/patrickloranger/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/patrickloranger/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/Users/patrickloranger/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/Users/patrickloranger/.m2/repository/org/seleniumhq/selenium/htmlunit-driver/2.33.2/htmlunit-driver-2.33.2.jar:/Users/patrickloranger/.m2/repository/net/sourceforge/htmlunit/htmlunit/2.33/htmlunit-2.33.jar:/Users/patrickloranger/.m2/repository/xalan/xalan/2.7.2/xalan-2.7.2.jar:/Users/patrickloranger/.m2/repository/xalan/serializer/2.7.2/serializer-2.7.2.jar:/Users/patrickloranger/.m2/repository/org/apache/commons/commons-text/1.4/commons-text-1.4.jar:/Users/patrickloranger/.m2/repository/org/apache/httpcomponents/httpmime/4.5.6/httpmime-4.5.6.jar:/Users/patrickloranger/.m2/repository/org/apache/httpcomponents/httpclient/4.5.6/httpclient-4.5.6.jar:/Users/patrickloranger/.m2/repository/org/apache/httpcomponents/httpcore/4.4.10/httpcore-4.4.10.jar:/Users/patrickloranger/.m2/repository/net/sourceforge/htmlunit/htmlunit-core-js/2.33/htmlunit-core-js-2.33.jar:/Users/patrickloranger/.m2/repository/net/sourceforge/htmlunit/neko-htmlunit/2.33/neko-htmlunit-2.33.jar:/Users/patrickloranger/.m2/repository/xerces/xercesImpl/2.12.0/xercesImpl-2.12.0.jar:/Users/patrickloranger/.m2/repository/xml-apis/xml-apis/1.4.01/xml-apis-1.4.01.jar:/Users/patrickloranger/.m2/repository/net/sourceforge/htmlunit/htmlunit-cssparser/1.2.0/htmlunit-cssparser-1.2.0.jar:/Users/patrickloranger/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/patrickloranger/.m2/repository/commons-net/commons-net/3.6/commons-net-3.6.jar:/Users/patrickloranger/.m2/repository/org/eclipse/jetty/websocket/websocket-client/9.4.12.v20180830/websocket-client-9.4.12.v20180830.jar:/Users/patrickloranger/.m2/repository/org/eclipse/jetty/jetty-client/9.4.12.v20180830/jetty-client-9.4.12.v20180830.jar:/Users/patrickloranger/.m2/repository/org/eclipse/jetty/jetty-http/9.4.12.v20180830/jetty-http-9.4.12.v20180830.jar:/Users/patrickloranger/.m2/repository/org/eclipse/jetty/jetty-xml/9.4.12.v20180830/jetty-xml-9.4.12.v20180830.jar:/Users/patrickloranger/.m2/repository/org/eclipse/jetty/jetty-util/9.4.12.v20180830/jetty-util-9.4.12.v20180830.jar:/Users/patrickloranger/.m2/repository/org/eclipse/jetty/jetty-io/9.4.12.v20180830/jetty-io-9.4.12.v20180830.jar:/Users/patrickloranger/.m2/repository/org/eclipse/jetty/websocket/websocket-common/9.4.12.v20180830/websocket-common-9.4.12.v20180830.jar:/Users/patrickloranger/.m2/repository/org/eclipse/jetty/websocket/websocket-api/9.4.12.v20180830/websocket-api-9.4.12.v20180830.jar:/Users/patrickloranger/.m2/repository/org/seleniumhq/selenium/selenium-server/3.141.59/selenium-server-3.141.59.jar:/Users/patrickloranger/.m2/repository/com/beust/jcommander/1.72/jcommander-1.72.jar:/Users/patrickloranger/.m2/repository/net/jcip/jcip-annotations/1.0/jcip-annotations-1.0.jar:/Users/patrickloranger/.m2/repository/org/seleniumhq/selenium/jetty-repacked/9.4.12.v20180830/jetty-repacked-9.4.12.v20180830.jar:/Users/patrickloranger/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar:/Users/patrickloranger/.m2/repository/org/yaml/snakeyaml/1.19/snakeyaml-1.19.jar:/Users/patrickloranger/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.7.2/junit-jupiter-api-5.7.2.jar:/Users/patrickloranger/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/patrickloranger/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/patrickloranger/.m2/repository/org/junit/platform/junit-platform-commons/1.7.2/junit-platform-commons-1.7.2.jar:/Users/patrickloranger/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.7.2/junit-jupiter-engine-5.7.2.jar:/Users/patrickloranger/.m2/repository/org/junit/platform/junit-platform-engine/1.7.2/junit-platform-engine-1.7.2.jar:/Users/patrickloranger/.m2/repository/io/github/bonigarcia/webdrivermanager/4.0.0/webdrivermanager-4.0.0.jar:/Users/patrickloranger/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/Users/patrickloranger/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/Users/patrickloranger/.m2/repository/com/google/code/gson/gson/2.8.6/gson-2.8.6.jar:/Users/patrickloranger/.m2/repository/org/apache/commons/commons-lang3/3.10/commons-lang3-3.10.jar:/Users/patrickloranger/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.0/httpclient5-5.0.jar:/Users/patrickloranger/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.0/httpcore5-5.0.jar:/Users/patrickloranger/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.0/httpcore5-h2-5.0.jar:/Users/patrickloranger/.m2/repository/commons-codec/commons-codec/1.13/commons-codec-1.13.jar:/Users/patrickloranger/.m2/repository/org/rauschig/jarchivelib/1.0.0/jarchivelib-1.0.0.jar:/Users/patrickloranger/.m2/repository/org/apache/commons/commons-compress/1.18/commons-compress-1.18.jar:/Users/patrickloranger/.m2/repository/org/jsoup/jsoup/1.13.1/jsoup-1.13.1.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -27,8 +37,13 @@
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
+<<<<<<< HEAD
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="surefire.real.class.path" value="/Users/patrickloranger/Documents/4. Summer Term 2021/SEG 3103/seg3103_playground/Assignment-3/BookstoreApp/target/surefire/surefirebooter17169267640099121938.jar"/>
+=======
+    <property name="surefire.real.class.path" value="C:\Users\jaoun\AppData\Local\Temp\surefire12838250832707928223\surefirebooter3657090608345102285.jar"/>
+    <property name="user.script" value=""/>
+>>>>>>> eb003d869d2bd3a066d1cf39b1651a4a4b094248
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="16.0.1+0"/>
@@ -54,6 +69,7 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="60.0"/>
   </properties>
+<<<<<<< HEAD
   <testcase name="test1" classname="selenium.ExampleSeleniumTest" time="2.531"/>
   <testcase name="test2" classname="selenium.ExampleSeleniumTest" time="2.342"/>
   <testcase name="F1PositiveTest" classname="selenium.ExampleSeleniumTest" time="2.863"/>
@@ -68,9 +84,36 @@
   <testcase name="F5NegativeTest" classname="selenium.ExampleSeleniumTest" time="12.087"/>
   <testcase name="F6PositiveTest" classname="selenium.ExampleSeleniumTest" time="1.941"/>
   <testcase name="F6NegativeTest" classname="selenium.ExampleSeleniumTest" time="1.879">
+=======
+  <testcase name="F1PositiveTest" classname="selenium.ExampleSeleniumTest" time="8.453">
+    <failure message="expected: &lt;Successfully added book&gt; but was: &lt;Book with same id already exist&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <Successfully added book> but was: <Book with same id already exist>
+	at selenium.ExampleSeleniumTest.F1PositiveTest(ExampleSeleniumTest.java:116)
+]]></failure>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Starting ChromeDriver 91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}) on port 13870
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jul 14, 2021 1:46:33 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="F1NegativeTest" classname="selenium.ExampleSeleniumTest" time="14.997"/>
+  <testcase name="test1" classname="selenium.ExampleSeleniumTest" time="2.244"/>
+  <testcase name="test2" classname="selenium.ExampleSeleniumTest" time="2.454"/>
+  <testcase name="F8PositiveTest" classname="selenium.ExampleSeleniumTest" time="3.404"/>
+  <testcase name="F8NegativeTest" classname="selenium.ExampleSeleniumTest" time="13.206"/>
+  <testcase name="F7PositiveTest" classname="selenium.ExampleSeleniumTest" time="13.951"/>
+  <testcase name="F7NegativeTest" classname="selenium.ExampleSeleniumTest" time="3.248"/>
+  <testcase name="F6PositiveTest" classname="selenium.ExampleSeleniumTest" time="3.18"/>
+  <testcase name="F6NegativeTest" classname="selenium.ExampleSeleniumTest" time="2.677">
+>>>>>>> eb003d869d2bd3a066d1cf39b1651a4a4b094248
     <failure message="expected: &lt;$0.00&gt; but was: &lt;$10.00&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <$0.00> but was: <$10.00>
 	at selenium.ExampleSeleniumTest.F6NegativeTest(ExampleSeleniumTest.java:292)
 ]]></failure>
+<<<<<<< HEAD
     <system-err><![CDATA[Starting ChromeDriver 91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}) on port 22454
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
@@ -100,4 +143,22 @@ INFO: Detected dialect: W3C
   <testcase name="UseCaseTest8_2" classname="selenium.ExampleSeleniumTest" time="12.251"/>
   <testcase name="UseCaseTest9_1" classname="selenium.ExampleSeleniumTest" time="2.867"/>
   <testcase name="UseCaseTest10_1" classname="selenium.ExampleSeleniumTest" time="2.456"/>
+=======
+    <system-err><![CDATA[Starting ChromeDriver 91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}) on port 32098
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jul 14, 2021 1:47:34 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="F5PositiveTest" classname="selenium.ExampleSeleniumTest" time="2.928"/>
+  <testcase name="F5NegativeTest" classname="selenium.ExampleSeleniumTest" time="12.64"/>
+  <testcase name="F4PositiveTest" classname="selenium.ExampleSeleniumTest" time="2.662"/>
+  <testcase name="F4NegativeTest" classname="selenium.ExampleSeleniumTest" time="32.189"/>
+  <testcase name="F3PositiveTest" classname="selenium.ExampleSeleniumTest" time="2.747"/>
+  <testcase name="F3NegativeTest" classname="selenium.ExampleSeleniumTest" time="12.257"/>
+  <testcase name="F2PositiveTest" classname="selenium.ExampleSeleniumTest" time="2.775"/>
+  <testcase name="F2NegativeTest" classname="selenium.ExampleSeleniumTest" time="2.35"/>
+>>>>>>> eb003d869d2bd3a066d1cf39b1651a4a4b094248
 </testsuite>
