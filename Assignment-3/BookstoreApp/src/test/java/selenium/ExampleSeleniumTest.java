@@ -488,7 +488,7 @@ class ExampleSeleniumTest {
 
     @Test
     @Order(23)
-    public void UseCaseTest3_2() {
+    public void UseCaseTest3_2() throws InterruptedException {
         driver.get("http://localhost:8080/login");
         WebElement userName = driver.findElement(By.id("loginId"));
         WebElement password = driver.findElement(By.id("loginPasswd"));
@@ -513,13 +513,15 @@ class ExampleSeleniumTest {
         cost.sendKeys("30.00");
         driver.findElement(By.cssSelector("#addBook-form > button")).click();
         // checking the valid book
+        Thread.sleep(1000);
+
         String check2 = driver.findElement(By.cssSelector("#feedback > h2")).getText();
         assertEquals("Successfully added book", check2);
     }
 
     @Test
     @Order(24)
-    public void UseCaseTest3_3() {
+    public void UseCaseTest3_3() throws InterruptedException {
         driver.get("http://localhost:8080/login");
         WebElement userName = driver.findElement(By.id("loginId"));
         WebElement password = driver.findElement(By.id("loginPasswd"));
@@ -545,7 +547,8 @@ class ExampleSeleniumTest {
         bookid.clear();
         bookid.sendKeys("h2501");
         driver.findElement(By.cssSelector("#addBook-form > button")).click();
-        String check2 = driver.findElement(By.cssSelector("#feedback > h2")).getText();
+        Thread.sleep(1000);
+        String check2 = driver.findElement(By.cssSelector("#feedback h2")).getText();
         assertEquals("Successfully added book", check2);
     }
 
