@@ -24,7 +24,7 @@ Date: Tuesday July 20, 2021
 
 The answer to this question can be found in: [assignment3_question1-2.pdf](assignment3_question1-2.pdf)
 
-## Question 1 (20%)
+## Question 1 (30%)
 ### Derive test cases based on the use cases in section C. For each use case give
 * A scenario graph
 * A set of scenarios ensuring branch coverage of the scenario graph
@@ -36,6 +36,8 @@ The answer to this question can be found in: [assignment3_question1-2.pdf](assig
 ### Provide a implementation of the test situations derived from the functional requirements in Question 1 and use case scenarios Question 2. Ensure you have traceability between your test implementation and the test situation. Give a brief explanation if you determine that a test situation cannot be implemented. 
 ### The function requirements should be written in Selenium using WebDriver, and the use case scenarios can be implemented using either Selenium directly, or with Cucumber (with StepDefs and Selenium invocation). 
 ### Attach screenshots of the result of running your tests to your report.
+
+
 
 When all the tests are written and ready, we use this command line to run them:
 ```bash
