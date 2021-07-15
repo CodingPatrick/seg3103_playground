@@ -13,7 +13,7 @@ Student Number: 300109692
 Professor: Andrew Forward, aforward@uottawa.ca<br>
 
 Course: SEG 3103<br>
-Date: Tuesday July 20, 2021
+Date: Thursday May 20, 2021
 
 ### Link for deliverable
 
