@@ -2,9 +2,10 @@ package selenium;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-import org.apache.commons.lang3.time.DateFormatUtils;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.MethodOrderer.OrderAnnotation;
+
+import java.util.Date;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -278,7 +279,8 @@ class ExampleSeleniumTest {
 
     @Test
     @Order(13)
-    public void F6PositiveTest() { // added a book to book order
+    public void F6PositiveTest() {
+        // added a book to book order
         driver.findElement(By.id("searchBtn")).click();
         driver.findElement(By.id("order-hall001")).click();
         driver.findElement(By.id("cartLink")).click();
@@ -286,11 +288,14 @@ class ExampleSeleniumTest {
         // checking if the date is correct
         String orderDate = driver.findElement(By.cssSelector("#order_date b")).getText();
         SimpleDateFormat formatter = new SimpleDateFormat("yyyy/MM/dd");
-        assertEquals(formatter.format(new DateFormatUtils()), orderDate); // checking if the shipping cost is correct
+        assertEquals(formatter.format(new Date()), orderDate);
+        // checking if the shipping cost is correct
         String shipping = driver.findElement(By.id("order_shipping")).getText();
-        assertEquals("$12.00", shipping); // checking if the taxes are correct and
+        assertEquals("$12.00", shipping);
+        // checking if the taxes are correct and
         String taxes = driver.findElement(By.id("order_taxes")).getText();
-        assertEquals("$5.19", taxes); // checking if the total cost is correct
+        assertEquals("$5.19", taxes);
+        // checking if the total cost is correct
         String totalCost = driver.findElement(By.id("order_total")).getText();
         assertEquals("$57.14", totalCost);
     }
@@ -476,6 +481,7 @@ class ExampleSeleniumTest {
         description.sendKeys("The book talks about two ranch workers during the great depression.");
         cost.sendKeys("20.00");
         driver.findElement(By.cssSelector("#addBook-form > button")).click();
+        // checking the valid book
         String done = driver.findElement(By.cssSelector("#feedback > h2")).getText();
         assertEquals("Successfully added book", done);
     }
@@ -506,6 +512,7 @@ class ExampleSeleniumTest {
         description.sendKeys("The book talks about a lawyer fighting against racism.");
         cost.sendKeys("30.00");
         driver.findElement(By.cssSelector("#addBook-form > button")).click();
+        // checking the valid book
         String check2 = driver.findElement(By.cssSelector("#feedback > h2")).getText();
         assertEquals("Successfully added book", check2);
     }

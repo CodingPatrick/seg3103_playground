@@ -1,16 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: selenium.ExampleSeleniumTest
 -------------------------------------------------------------------------------
-Tests run: 35, Failures: 1, Errors: 3, Skipped: 0, Time elapsed: 185.846 s <<< FAILURE! - in selenium.ExampleSeleniumTest
-F6PositiveTest  Time elapsed: 1.741 s  <<< ERROR!
-java.lang.IllegalArgumentException: Cannot format given Object as a Date
-	at selenium.ExampleSeleniumTest.F6PositiveTest(ExampleSeleniumTest.java:289)
-
-F6NegativeTest  Time elapsed: 2.028 s  <<< FAILURE!
+Tests run: 35, Failures: 1, Errors: 2, Skipped: 0, Time elapsed: 185.386 s <<< FAILURE! - in selenium.ExampleSeleniumTest
+F6NegativeTest  Time elapsed: 1.879 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <$0.00> but was: <$10.00>
-	at selenium.ExampleSeleniumTest.F6NegativeTest(ExampleSeleniumTest.java:305)
+	at selenium.ExampleSeleniumTest.F6NegativeTest(ExampleSeleniumTest.java:310)
 
-UseCaseTest3_2  Time elapsed: 2.568 s  <<< ERROR!
+UseCaseTest3_2  Time elapsed: 2.306 s  <<< ERROR!
 org.openqa.selenium.StaleElementReferenceException: 
 stale element reference: element is not attached to the page document
   (Session info: chrome=91.0.4472.114)
@@ -18,11 +14,11 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'Patricks-MacBook-Pro.local', ip: '2607:fea8:bfdf:e59d:c048:fc51:f9ea:11d1%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.4', java.version: '16.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: /var/folders/g8/dmj548jj13z...}, goog:chromeOptions: {debuggerAddress: localhost:65437}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 4596937e221fc0279ce06dabf8f16d7a
-	at selenium.ExampleSeleniumTest.UseCaseTest3_2(ExampleSeleniumTest.java:509)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: /var/folders/g8/dmj548jj13z...}, goog:chromeOptions: {debuggerAddress: localhost:50078}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1498a8243938ce9ab6e315feef6436f7
+	at selenium.ExampleSeleniumTest.UseCaseTest3_2(ExampleSeleniumTest.java:516)
 
-UseCaseTest3_3  Time elapsed: 2.311 s  <<< ERROR!
+UseCaseTest3_3  Time elapsed: 2.281 s  <<< ERROR!
 org.openqa.selenium.StaleElementReferenceException: 
 stale element reference: element is not attached to the page document
   (Session info: chrome=91.0.4472.114)
@@ -30,7 +26,7 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'Patricks-MacBook-Pro.local', ip: '2607:fea8:bfdf:e59d:c048:fc51:f9ea:11d1%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.4', java.version: '16.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: /var/folders/g8/dmj548jj13z...}, goog:chromeOptions: {debuggerAddress: localhost:65452}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 400372062346b6beea6262e02ddf724f
-	at selenium.ExampleSeleniumTest.UseCaseTest3_3(ExampleSeleniumTest.java:541)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: /var/folders/g8/dmj548jj13z...}, goog:chromeOptions: {debuggerAddress: localhost:50092}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a0b76aa0c89793bb256f28ec7903e79a
+	at selenium.ExampleSeleniumTest.UseCaseTest3_3(ExampleSeleniumTest.java:548)
 
