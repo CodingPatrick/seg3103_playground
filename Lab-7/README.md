@@ -48,9 +48,9 @@ java -jar ./lib/spotbugs/lib/spotbugs.jar
 ```
 ![terminal screenshot](Assets/SpotBugs.PNG)
 
-### Fixing/Suggesting Bug Fixes:
+## Fixing/Suggesting Bug Fixes:
 
-#### Bug 1: 
+### Bug 1: 
 
 For this bug, the original code uses == to compare strings and that is incorrect because String is a reference type not a primitive types
 
@@ -63,7 +63,7 @@ For this bug, the original code uses == to compare strings and that is incorrect
 
 
 
-#### Bug 2: 
+### Bug 2: 
 For this bug, what is happening is that the original code calls the function setVisible outside of a 
 ##### Spot Bug Description
 ![terminal screenshot](Assets/Bug2/Bug2Description.PNG)
@@ -75,7 +75,7 @@ For this bug, we need to make sure that the function JFrame.setVisible is placed
 
 # skipping Bug3 for now
 
-#### Bug 3: 
+### Bug 3: 
 For this bug, what is happening is that the original code calls the function setVisible outside of a 
 ##### Spot Bug Description
 ![terminal screenshot](Assets/Bug3/Bug3Description.PNG)
@@ -84,14 +84,14 @@ For this bug, what is happening is that the original code calls the function set
 ##### Proposed Soloution
 For this bug, we need to make sure that the function JFrame.setVisible is placed inside a Java Swing thread not just in main.
 
-#### Bug 4: 
+### Bug 4: 
 For this bug, there is a method that is never being used by the application and it is just wasting memory. So I deleted it.
 ##### Spot Bug Description
 ![terminal screenshot](Assets/Bug4/Bug4Description.PNG)
 ##### The Code Before Fixing The Issue
 ![terminal screenshot](Assets/Bug4/Bug4Before.PNG)
 ##### Proposed Soloution
-![terminal screenshot](Assets/Bug4/Bug4Before.PNG)
+![terminal screenshot](Assets/Bug4/Bug4After.PNG)
 
 
 
