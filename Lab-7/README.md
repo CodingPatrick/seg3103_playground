@@ -95,7 +95,7 @@ For this bug, there is a method that is never being used by the application and 
 
 
 ### Bug 5: 
-For this bug, .
+For this bug, there is unnecessary conversions occuring so I changed the code to make the conversion simpler and free of unnecessary steps.
 ##### Spot Bug Description
 ![terminal screenshot](Assets/Bug5/Bug5Description.PNG)
 ##### The Code Before Fixing The Issue
