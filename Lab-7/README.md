@@ -55,11 +55,11 @@ java -jar ./lib/spotbugs/lib/spotbugs.jar
 For this bug, the original code uses == to compare strings and that is incorrect because String is a reference type not a primitive types
 
 ##### Spot Bug Description
-![BugsAppearing](assets/Bug1/Bug1Description.png)
+![Bug1Description](assets/Bug1/Bug1Description.png)
 ##### The Code Before Fixing The Issue
-![BugsAppearing](assets/Bug2/Bug1Before.png)
+![Bug1Before](assets/Bug2/Bug1Before.png)
 ##### The Code After Fixing the Issue
-![BugsAppearing](assets/Bug2/Bug1After.png)
+![Bugs1After](assets/Bug2/Bug1After.png)
 
 
 
