@@ -94,4 +94,14 @@ For this bug, there is a method that is never being used by the application and 
 ![terminal screenshot](Assets/Bug4/Bug4After.PNG)
 
 
+### Bug 5: 
+For this bug, .
+##### Spot Bug Description
+![terminal screenshot](Assets/Bug5/Bug5Description.PNG)
+##### The Code Before Fixing The Issue
+![terminal screenshot](Assets/Bug5/Bug5Before.PNG)
+##### Proposed Soloution
+![terminal screenshot](Assets/Bug5/Bug5After.PNG)
+
+
 

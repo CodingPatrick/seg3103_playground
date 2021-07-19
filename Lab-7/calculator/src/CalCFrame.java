@@ -269,7 +269,7 @@ public void processNumbers() {
       equals = false;   // equals is set to false to allow additional input    
   } // end if    
     else 
-      num1 = Double.valueOf( input ).doubleValue();  // converts a string number to double
+      num1 = Double.parseDouble(input);  // converts a string number to double
      
       oldoper =  oper;                  // store current operator to oldoper
       
