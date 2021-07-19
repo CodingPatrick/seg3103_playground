@@ -153,7 +153,7 @@ class ExampleSeleniumTest {
 
     @Test
     @Order(5)
-    public void F2PositiveTest() {
+    public void F2_1PositiveTest() {
         WebElement category = driver.findElement(By.id("search"));
         category.sendKeys("kids");
         driver.findElement(By.id("searchBtn")).click();
@@ -170,7 +170,7 @@ class ExampleSeleniumTest {
 
     @Test
     @Order(6)
-    public void F2NegativeTest() {
+    public void F2_1NegativeTest() {
         WebElement category = driver.findElement(By.id("search"));
         category.sendKeys("20.00");
         driver.findElement(By.id("searchBtn")).click();
@@ -180,6 +180,28 @@ class ExampleSeleniumTest {
 
     @Test
     @Order(7)
+    public void F2_2PositiveTest() {
+
+        driver.findElement(By.id("searchBtn")).click();
+        String searchMessage = driver.findElement(By.cssSelector(".content h1")).getText();
+        assertEquals("We currently have the following items in category ''", searchMessage);
+        // at this state of the system there should be 6 books in the system.
+        int booksInTheSystem = driver.findElements(By.cssSelector("body > div > div.content > table > tbody > tr")).size();
+        assertEquals(booksInTheSystem, 6);
+    }
+
+    @Test
+    @Order(8)
+    public void F2_2NegativeTest() {
+        WebElement category = driver.findElement(By.id("search"));
+        category.sendKeys("blah");
+        driver.findElement(By.id("searchBtn")).click();
+        String searchMessage = driver.findElement(By.cssSelector(".content h1")).getText();
+        assertEquals("Sorry we do not have any item matching category 'blah' at this moment", searchMessage);
+    }
+
+    @Test
+    @Order(9)
     public void F3PositiveTest() {
         driver.findElement(By.id("searchBtn")).click();
         driver.findElement(By.id("order-hall001")).click();
@@ -191,7 +213,7 @@ class ExampleSeleniumTest {
     }
 
     @Test
-    @Order(8)
+    @Order(10)
     public void F3NegativeTest() {
         driver.findElement(By.id("searchBtn")).click();
         driver.findElement(By.id("order-lewis001")).click();
@@ -203,7 +225,7 @@ class ExampleSeleniumTest {
     }
 
     @Test
-    @Order(9)
+    @Order(11)
     public void F4PositiveTest() { // added a book to book order
         driver.findElement(By.id("searchBtn")).click();
         driver.findElement(By.id("order-hall001")).click();
@@ -227,7 +249,7 @@ class ExampleSeleniumTest {
     }
 
     @Test
-    @Order(10)
+    @Order(12)
     public void F4NegativeTest() {
         driver.get("http://localhost:8080/orderPage"); // goes to an empty book order
         // attempting to get information for the first element of the book order in an
@@ -247,7 +269,7 @@ class ExampleSeleniumTest {
     }
 
     @Test
-    @Order(11)
+    @Order(13)
     public void F5PositiveTest() { // added a book to book order
         driver.findElement(By.id("searchBtn")).click();
         driver.findElement(By.id("order-hall001")).click();
@@ -262,7 +284,7 @@ class ExampleSeleniumTest {
     }
 
     @Test
-    @Order(12)
+    @Order(14)
     public void F5NegativeTest() { // added a book to book order
         driver.findElement(By.id("searchBtn")).click();
         driver.findElement(By.id("order-hall001")).click();
@@ -278,7 +300,7 @@ class ExampleSeleniumTest {
     }
 
     @Test
-    @Order(13)
+    @Order(15)
     public void F6PositiveTest() {
         // added a book to book order
         driver.findElement(By.id("searchBtn")).click();
@@ -301,7 +323,7 @@ class ExampleSeleniumTest {
     }
 
     @Test
-    @Order(14)
+    @Order(16)
     public void F6NegativeTest() {
         driver.findElement(By.id("searchBtn")).click();
         driver.findElement(By.id("cartLink")).click();
@@ -315,7 +337,7 @@ class ExampleSeleniumTest {
     }
 
     @Test
-    @Order(15)
+    @Order(17)
     public void F7PositiveTest() throws Exception { // Ensuring that I login before doing any admin actions
         driver.get("http://localhost:8080/login");
         WebElement userName = driver.findElement(By.id("loginId"));
@@ -345,7 +367,7 @@ class ExampleSeleniumTest {
     }
 
     @Test
-    @Order(16)
+    @Order(18)
     public void F7NegativeTest() {
         driver.get("http://localhost:8080/login");
         WebElement userName = driver.findElement(By.id("loginId"));
@@ -374,7 +396,7 @@ class ExampleSeleniumTest {
     }
 
     @Test
-    @Order(17)
+    @Order(19)
     public void F8PositiveTest() {
         driver.get("http://localhost:8080/login");
         WebElement userName = driver.findElement(By.id("loginId"));
@@ -391,7 +413,7 @@ class ExampleSeleniumTest {
     }
 
     @Test
-    @Order(18)
+    @Order(20)
     public void F8NegativeTest() {
         driver.get("http://localhost:8080/login");
         WebElement userName = driver.findElement(By.id("loginId"));
@@ -407,7 +429,7 @@ class ExampleSeleniumTest {
     }
 
     @Test
-    @Order(19)
+    @Order(21)
     public void UseCaseTest1_1() {
         driver.get("http://localhost:8080/login");
         WebElement userName = driver.findElement(By.id("loginId"));
@@ -422,7 +444,7 @@ class ExampleSeleniumTest {
     }
 
     @Test
-    @Order(20)
+    @Order(22)
     public void UseCaseTest1_2() {
         driver.get("http://localhost:8080/login");
         WebElement userName = driver.findElement(By.id("loginId"));
@@ -443,7 +465,7 @@ class ExampleSeleniumTest {
     }
 
     @Test
-    @Order(21)
+    @Order(23)
     public void UseCaseTest2_1() {
         driver.get("http://localhost:8080/login");
         WebElement userName = driver.findElement(By.id("loginId"));
@@ -459,7 +481,7 @@ class ExampleSeleniumTest {
     }
 
     @Test
-    @Order(22)
+    @Order(24)
     public void UseCaseTest3_1() {
         driver.get("http://localhost:8080/login");
         WebElement userName = driver.findElement(By.id("loginId"));
@@ -487,7 +509,7 @@ class ExampleSeleniumTest {
     }
 
     @Test
-    @Order(23)
+    @Order(25)
     public void UseCaseTest3_2() throws InterruptedException {
         driver.get("http://localhost:8080/login");
         WebElement userName = driver.findElement(By.id("loginId"));
@@ -520,7 +542,7 @@ class ExampleSeleniumTest {
     }
 
     @Test
-    @Order(24)
+    @Order(26)
     public void UseCaseTest3_3() throws InterruptedException {
         driver.get("http://localhost:8080/login");
         WebElement userName = driver.findElement(By.id("loginId"));
@@ -553,7 +575,7 @@ class ExampleSeleniumTest {
     }
 
     @Test
-    @Order(25)
+    @Order(27)
     public void UseCaseTest4_1() {
         driver.get("http://localhost:8080");
         WebElement category = driver.findElement(By.id("search"));
@@ -565,7 +587,7 @@ class ExampleSeleniumTest {
     }
 
     @Test
-    @Order(26)
+    @Order(28)
     public void UseCaseTest4_2() {
         driver.get("http://localhost:8080");
         driver.findElement(By.id("searchBtn")).click();
@@ -575,7 +597,7 @@ class ExampleSeleniumTest {
     }
 
     @Test
-    @Order(27)
+    @Order(29)
     public void UseCaseTest4_3() {
         driver.get("http://localhost:8080");
         WebElement category = driver.findElement(By.id("search"));
@@ -587,7 +609,7 @@ class ExampleSeleniumTest {
     }
 
     @Test
-    @Order(28)
+    @Order(30)
     public void UseCaseTest5_1() throws Exception {
         driver.get("http://localhost:8080/login");
         WebElement userName = driver.findElement(By.id("loginId"));
@@ -610,7 +632,7 @@ class ExampleSeleniumTest {
     }
 
     @Test
-    @Order(29)
+    @Order(31)
     public void UseCaseTest6_1() {
         driver.get("http://localhost:8080");
         driver.findElement(By.id("searchBtn")).click();
@@ -628,7 +650,7 @@ class ExampleSeleniumTest {
     }
 
     @Test
-    @Order(30)
+    @Order(32)
     public void UseCaseTest6_2() {
         driver.get("http://localhost:8080");
         driver.findElement(By.id("searchBtn")).click();
@@ -646,7 +668,7 @@ class ExampleSeleniumTest {
     }
 
     @Test
-    @Order(31)
+    @Order(33)
     public void UseCaseTest7_1() {
         driver.get("http://localhost:8080");
         driver.findElement(By.id("searchBtn")).click();
@@ -661,7 +683,7 @@ class ExampleSeleniumTest {
     }
 
     @Test
-    @Order(32)
+    @Order(34)
     public void UseCaseTest8_1() {
         driver.get("http://localhost:8080");
         driver.findElement(By.id("searchBtn")).click();
@@ -690,7 +712,7 @@ class ExampleSeleniumTest {
     }
 
     @Test
-    @Order(33)
+    @Order(35)
     public void UseCaseTest8_2() {
         driver.get("http://localhost:8080");
         driver.findElement(By.id("searchBtn")).click();
@@ -723,7 +745,7 @@ class ExampleSeleniumTest {
     }
 
     @Test
-    @Order(34)
+    @Order(36)
     public void UseCaseTest9_1() {
         driver.get("http://localhost:8080");
         driver.findElement(By.id("searchBtn")).click();
@@ -749,7 +771,7 @@ class ExampleSeleniumTest {
     }
 
     @Test
-    @Order(35)
+    @Order(37)
     public void UseCaseTest10_1() {
         driver.get("http://localhost:8080");
         String titleBefore = driver.findElement(By.id("title")).getText();
