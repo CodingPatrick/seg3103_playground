@@ -25,28 +25,28 @@ Date: Thursday July 22, 2021
 javac -encoding UTF-8 --source-path src -d dist src/*.java
 
 ```
-![terminal_screenshot_compilation_source](Assets/CompiledPicture.png)
+![terminal screenshot](Assets/CompiledPicture.PNG)
 
 ### Compiling the tests
 
 ```code
 javac -encoding UTF-8 --source-path test -d dist -cp dist:lib/junit-platform-console-standalone-1.7.1.jar test/*.java
 ```
-![terminal_screenshot_comilation_tests](Assets/compiledTests.png)
+![terminal screenshot](Assets/compiledTests.PNG)
 
 ### Running the Application
 
 ```code
 java -cp ./dist Main
 ```
-![App_Running](Assets/ApplicationRunning.png)
+![terminal screenshot](Assets/ApplicationRunning.PNG)
 
 ### Running Spotbugs For Analysis
 
 ```code
 java -jar ./lib/spotbugs/lib/spotbugs.jar
 ```
-![BugsAppearing](Assets/SpotBugs.png)
+![terminal screenshot](Assets/SpotBugs.PNG)
 
 ### Fixing/Suggesting Bug Fixes:
 
@@ -55,11 +55,11 @@ java -jar ./lib/spotbugs/lib/spotbugs.jar
 For this bug, the original code uses == to compare strings and that is incorrect because String is a reference type not a primitive types
 
 ##### Spot Bug Description
-![Bug1Description](Assets/Bug1/Bug1Description.png)
+![terminal screenshot](Assets/Bug1/Bug1Description.PNG)
 ##### The Code Before Fixing The Issue
-![Bug1Before](Assets/Bug2/Bug1Before.png)
+![terminal screenshot](Assets/Bug1/Bug1Before.PNG)
 ##### The Code After Fixing the Issue
-![Bugs1After](Assets/Bug2/Bug1After.png)
+![terminal screenshot](Assets/1/Bug1After.PNG)
 
 
 
