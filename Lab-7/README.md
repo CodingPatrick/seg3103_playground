@@ -104,14 +104,6 @@ For this bug, there is unnecessary conversions occuring so I changed the code to
 ![terminal screenshot](Assets/Bug5/Bug5After.PNG)
 
 
-### Bug 5: 
-For this bug, there is unnecessary conversions occuring so I changed the code to make the conversion simpler and free of unnecessary steps. Please note that after I ran spotbug again, I noticed the same problem at different areas of the function so the same edit was done there (at: num2, num3)
-##### Spot Bug Description
-![terminal screenshot](Assets/Bug5/Bug5Description.PNG)
-##### The Code Before Fixing The Issue
-![terminal screenshot](Assets/Bug5/Bug5Before.PNG)
-##### Proposed Soloution
-![terminal screenshot](Assets/Bug5/Bug5After.PNG)
 
 ### Bug 6: 
 This over here is a warning that suggests the use of staic for ADD since that it is a final variable. Please note that this fix applies to bug 7,8,9,10,11 (ADD, SUB, MULT, DIVI, POW, SQRT) and I will not repeat images for those in the report to make the report more readable.
