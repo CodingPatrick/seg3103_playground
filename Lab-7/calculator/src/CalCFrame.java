@@ -47,10 +47,10 @@ class CalCFrame extends JFrame implements ActionListener
                       decnumber = false,  //"" if a user entered a float
                       doubleclick = false; //"" if mouse was doubleclicked
  
-public CalCFrame(String title) {
+public  CalCFrame(String title) {
      
     super(title);
-    addWindowListener(new WindowAdapter() {
+     addWindowListener(new WindowAdapter() {
       public void windowClosing(WindowEvent e) {
       System.exit(0);
     }});

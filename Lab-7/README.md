@@ -59,7 +59,39 @@ For this bug, the original code uses == to compare strings and that is incorrect
 ##### The Code Before Fixing The Issue
 ![terminal screenshot](Assets/Bug1/Bug1Before.PNG)
 ##### The Code After Fixing the Issue
-![terminal screenshot](Assets/1/Bug1After.PNG)
+![terminal screenshot](Assets/Bug1/Bug1After.PNG)
+
+
+
+#### Bug 2: 
+For this bug, what is happening is that the original code calls the function setVisible outside of a 
+##### Spot Bug Description
+![terminal screenshot](Assets/Bug2/Bug2Description.PNG)
+##### The Code Before Fixing The Issue
+![terminal screenshot](Assets/Bug2/Bug2Before.PNG)
+##### Proposed Soloution
+For this bug, we need to make sure that the function JFrame.setVisible is placed inside a Java Swing thread not just in main.
+
+
+# skipping Bug3 for now
+
+#### Bug 3: 
+For this bug, what is happening is that the original code calls the function setVisible outside of a 
+##### Spot Bug Description
+![terminal screenshot](Assets/Bug3/Bug3Description.PNG)
+##### The Code Before Fixing The Issue
+![terminal screenshot](Assets/Bug3/Bug3Before.PNG)
+##### Proposed Soloution
+For this bug, we need to make sure that the function JFrame.setVisible is placed inside a Java Swing thread not just in main.
+
+#### Bug 4: 
+For this bug, there is a method that is never being used by the application and it is just wasting memory. So I deleted it.
+##### Spot Bug Description
+![terminal screenshot](Assets/Bug4/Bug4Description.PNG)
+##### The Code Before Fixing The Issue
+![terminal screenshot](Assets/Bug4/Bug4Before.PNG)
+##### Proposed Soloution
+![terminal screenshot](Assets/Bug4/Bug4Before.PNG)
 
 
 
