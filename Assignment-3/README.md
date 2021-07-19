@@ -52,12 +52,12 @@ Here is a screenshot of the results of running our tests:
 ![testing picture](assets/tests.png)
 
 As you can see there is:
-* Tests run: 36
+* Tests run: 37
 * Failures: 1
 * Errors: 0
 * Skipped: 0
 
-This means that we have 35 tests that pass and only 1 that fails. The test that fails is F6NegativeTest, and it fails by design. Right now, the system charges 10$ shipping fee if there is nothing in the cart when you click "proceed to checkout". We made the assumption that it should not charge anything (0$) as the user is not ordering any books from the Library website. So in our F6NegativeTest, we assertEquals every value in the checkout page with 0$ even if we know it will fail. 
+This means that we have 37 tests that pass and only 1 that fails. The test that fails is F6NegativeTest, and it fails by design. Right now, the system charges 10$ shipping fee if there is nothing in the cart when you click "proceed to checkout". We made the assumption that it should not charge anything (0$) as the user is not ordering any books from the Library website. So in our F6NegativeTest, we assertEquals every value in the checkout page with 0$ even if we know it will fail. 
 
 As professor Andrew Forward mentions in [Piazza @366:](https://piazza.com/class/knxg0zgsce5jp?cid=366) "Why do we test? Because software isn't perfect." We know in this case that the software for this library is not perfect because it should not charge any money to a user ordering nothing. This was a brief explanation on why we determined that this test cannot be implemented as a passing test, and must fail.
 
