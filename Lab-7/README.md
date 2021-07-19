@@ -95,7 +95,7 @@ For this bug, there is a method that is never being used by the application and 
 
 
 ### Bug 5: 
-For this bug, there is unnecessary conversions occuring so I changed the code to make the conversion simpler and free of unnecessary steps.
+For this bug, there is unnecessary conversions occuring so I changed the code to make the conversion simpler and free of unnecessary steps. Please note that after I ran spotbug again, I noticed the same problem at different areas of the function so the same edit was done there (at: num2, num3)
 ##### Spot Bug Description
 ![terminal screenshot](Assets/Bug5/Bug5Description.PNG)
 ##### The Code Before Fixing The Issue
@@ -104,4 +104,30 @@ For this bug, there is unnecessary conversions occuring so I changed the code to
 ![terminal screenshot](Assets/Bug5/Bug5After.PNG)
 
 
+### Bug 5: 
+For this bug, there is unnecessary conversions occuring so I changed the code to make the conversion simpler and free of unnecessary steps. Please note that after I ran spotbug again, I noticed the same problem at different areas of the function so the same edit was done there (at: num2, num3)
+##### Spot Bug Description
+![terminal screenshot](Assets/Bug5/Bug5Description.PNG)
+##### The Code Before Fixing The Issue
+![terminal screenshot](Assets/Bug5/Bug5Before.PNG)
+##### Proposed Soloution
+![terminal screenshot](Assets/Bug5/Bug5After.PNG)
+
+### Bug 6: 
+This over here is a warning that suggests the use of staic for ADD since that it is a final variable. Please note that this fix applies to bug 7,8,9,10,11 (ADD, SUB, MULT, DIVI, POW, SQRT) and I will not repeat images for those in the report to make the report more readable.
+##### Spot Bug Description
+![terminal screenshot](Assets/Bug6/Bug6Description.PNG)
+##### The Code Before Fixing The Issue
+![terminal screenshot](Assets/Bug6/Bug6Before.PNG)
+##### Proposed Soloution
+![terminal screenshot](Assets/Bug6/Bug6After.PNG)
+
+### Bug12
+The bug here is that there are branches that have the same operations in them and it is a warning to basically reduce branching and that will make the software much easier to test
+##### Spot Bug Description
+![terminal screenshot](Assets/Bug12/Bug12Description.PNG)
+##### The Code Before Fixing The Issue
+![terminal screenshot](Assets/Bug12/Bug12Before.PNG)
+##### Proposed Soloution
+![terminal screenshot](Assets/Bug12/Bug12After.PNG)
 

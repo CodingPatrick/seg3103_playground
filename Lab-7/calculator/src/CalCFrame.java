@@ -34,7 +34,7 @@ class CalCFrame extends JFrame implements ActionListener
                       num1 = 0.0, 
                       num2 = 0.0, 
                       num3 = 0.0;
-  private final int   ADD=1,        // integer constants representing operators
+  private static final int   ADD=1,        // integer constants representing operators
                       SUB = 2, 
                       MULT = 3, 
                       DIVI = 4, 
@@ -73,24 +73,10 @@ public  CalCFrame(String title) {
     
     if ( i <= 2 )
         getContentPane().add( buttons[i] );
-    else if ( i >= 3 && i <= 7)
-        getContentPane().add( buttons[i] );
-    else if ( i >=8 && i <= 12 )
-        getContentPane().add( buttons[i] );
-    else if ( i >= 13 && i <= 17 )
-        getContentPane().add( buttons[i] );
-    else
-        getContentPane().add( buttons[i] );
-       
+
     if ( i == 2 )
         getContentPane().add( new JLabel( "  " ) );
-    else if ( i == 7 )
-        getContentPane().add( new JLabel( "  " ) );
-    else if ( i == 12 )
-        getContentPane().add( new JLabel( "  " ) );
-    else if ( i == 17 )
-        getContentPane().add( new JLabel( "  " ) );
-          
+     
     }     
    buttons[15].setForeground( Color.red ); 
    result.setBackground( Color.white );          
@@ -286,7 +272,7 @@ public void processNumbers() {
     // be calculated
     else if ( !morenums ) {      
      
-      num2 = Double.valueOf( input ).doubleValue();           //converts second num to double
+      num2 = Double.parseDouble(input);           //converts second num to double
       answer = calculate( oldoper, num1, num2 ); //calculate num1 and num2 with   
       showAnswer( Double.toString( answer) );   //the past operator
       newoper = oper;                            //store current operator to
@@ -310,7 +296,7 @@ public void processNumbers() {
         firstpress = true;  // if equals is pressed set firstpress to false
     } // end if             
     
-      num3 = Double.valueOf( input ).doubleValue();
+      num3 = Double.parseDouble(input);
       answer = calculate( newoper, answer, num3 );      
       showAnswer( Double.toString(answer) );
       
@@ -357,7 +343,7 @@ public void showAnswer( String s )
 {
     double answer;
     
-    answer = Double.valueOf(s).doubleValue();
+    answer = Double.parseDouble(input);
     if ( decnumber )    
     result.setText( Double.toString(answer) );
     else
