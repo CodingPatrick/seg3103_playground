@@ -52,7 +52,7 @@ java -jar ./lib/spotbugs/lib/spotbugs.jar
 
 ### Bug 1: 
 
-For this bug, the original code uses == to compare strings and that is incorrect because String is a reference type not a primitive types
+For this bug, the original code uses == to compare strings and that is incorrect because String is a reference type not a primitive type
 
 ##### Spot Bug Description
 ![terminal screenshot](Assets/Bug1/Bug1Description.PNG)
@@ -114,7 +114,7 @@ This over here is a warning that suggests the use of staic for ADD since that it
 ##### Proposed Soloution
 ![terminal screenshot](Assets/Bug6/Bug6After.PNG)
 
-### Bug12
+### Bug 12
 The bug here is that there are branches that have the same operations in them and it is a warning to basically reduce branching and that will make the software much easier to test
 ##### Spot Bug Description
 ![terminal screenshot](Assets/Bug12/Bug12Description.PNG)
@@ -123,3 +123,11 @@ The bug here is that there are branches that have the same operations in them an
 ##### Proposed Soloution
 ![terminal screenshot](Assets/Bug12/Bug12After.PNG)
 
+### Bug 13
+The bug here was that no defualt statement was added in the code and it is recommended that every switch statement needs to have a default
+##### Spot Bug Description
+![terminal screenshot](Assets/Bug13/Bug13Description.PNG)
+##### The Code Before Fixing The Issue
+![terminal screenshot](Assets/Bug13/Bug13Before.PNG)
+##### Proposed Soloution
+![terminal screenshot](Assets/Bug13/Bug13After.PNG)
