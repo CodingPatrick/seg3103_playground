@@ -287,7 +287,7 @@ public void processNumbers() {
   
     // if more than two numbers are being inputted to calculate, this "if" block
     // is accessed
-    else if (morenums) { 
+    else { 
       
       if ( equals ) {
        
